@@ -1,0 +1,135 @@
+[
+    {
+        "company_name": "Eaton",
+        "job_location": "Espoo",
+        "job_title": "Battery Systems Test Engineer",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/battery-systems-test-engineer-scsom-16938006",
+        "date": "12-07-23"
+    },
+    {
+        "company_name": "Huld Oy",
+        "job_location": "Espoo",
+        "job_title": "Embedded Software Test Engineer - Finland",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/embedded-software-test-engineer-finland-stse-16909281",
+        "date": "05-06-23"
+    },
+    {
+        "company_name": "PolarPro",
+        "job_location": "Helsinki ja 2 muuta",
+        "job_title": "Kuljettajia, pyöräkoneen kuljettajia ja kaivinkoneen kuljettajia",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/kuljettajia-pyorakoneen-kuljettajia-ja-kaivinkoneen-kuljettajia-sdsuu-17099715",
+        "date": "24-07-23"
+    },
+    {
+        "company_name": "Kassiopeia Hotels & Restaurants",
+        "job_location": "Kittilä ja 4 muuta",
+        "job_title": "Ravintola- ja hotellialan työntekijöitä Leville talvikaudelle",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/ravintola-ja-hotellialan-osaajia-levin-talvikaudelle-sdsuu-17100022",
+        "date": "24-07-23"
+    },
+    {
+        "company_name": "Diktamen Oy",
+        "job_location": "Helsinki ja 16 muuta",
+        "job_title": "Erikoissairaanhoidon tekstinkäsittelijä",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/diktamen-tekstinkasittelija-helsinki-sdsuu-17011313",
+        "date": "29-06-23"
+    },
+    {
+        "company_name": "VR FleetCare",
+        "job_location": "Helsinki ja 1 muu",
+        "job_title": "Asentajaksi VR FleetCarelle",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/vr-fleetcare-asentajaksi-vr-fleetcarelle-sdsuu-17052778",
+        "date": "10-07-23"
+    },
+    {
+        "company_name": "Länsi-Uudenmaan hyvinvointialue",
+        "job_location": "Espoo ja 9 muuta",
+        "job_title": "Sairaanhoitaja",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/lansi-uudenmaan-hyvinvointialue-sairaanhoitaja-sdsuu-17024310",
+        "date": "04-07-23"
+    },
+    {
+        "company_name": "Sweco Finland Oy",
+        "job_location": "Finland ja 27 muuta",
+        "job_title": "Energiamurroksen osaajia",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/sweco-energiamurroksen-osaajia-sdsuu-17033275",
+        "date": "24-07-23"
+    },
+    {
+        "company_name": "UPM",
+        "job_location": "Jämsä",
+        "job_title": "Senior Supervisor, Laboratory",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/upm-kymmene-senior-supervisor-laboratory-sdsuu-17090725",
+        "date": "21-07-23"
+    },
+    {
+        "company_name": "Tietoevry",
+        "job_location": "Espoo ja 5 muuta",
+        "job_title": "Test Automation Specialist - Tietoevry Create (Evergreen)",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/test-automation-specialist-tietoevry-create-evergreen-stsie-17032950",
+        "date": "07-07-23"
+    },
+    {
+        "company_name": "Gofore",
+        "job_location": "Espoo ja 7 muuta",
+        "job_title": "Test Automation Capability Owner",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/test-automation-capability-owner-sgsof-16966813",
+        "date": "17-06-23"
+    },
+    {
+        "company_name": "HiQ Finland",
+        "job_location": "Espoo",
+        "job_title": "Senior Test Automation Specialist",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/senior-test-automation-specialist-shsiq-16415929",
+        "date": "03-03-23"
+    },
+    {
+        "company_name": "PolarPro",
+        "job_location": "Helsinki ja 2 muuta",
+        "job_title": "Kuljettajia, pyöräkoneen kuljettajia ja kaivinkoneen kuljettajia",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/kuljettajia-pyorakoneen-kuljettajia-ja-kaivinkoneen-kuljettajia-sdsuu-17099715",
+        "date": "24-07-23"
+    },
+    {
+        "company_name": "Kassiopeia Hotels & Restaurants",
+        "job_location": "Kittilä ja 4 muuta",
+        "job_title": "Ravintola- ja hotellialan työntekijöitä Leville talvikaudelle",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/ravintola-ja-hotellialan-osaajia-levin-talvikaudelle-sdsuu-17100022",
+        "date": "24-07-23"
+    },
+    {
+        "company_name": "Länsi-Uudenmaan hyvinvointialue",
+        "job_location": "Espoo ja 9 muuta",
+        "job_title": "Sairaanhoitaja",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/lansi-uudenmaan-hyvinvointialue-sairaanhoitaja-sdsuu-17024310",
+        "date": "04-07-23"
+    },
+    {
+        "company_name": "VR FleetCare",
+        "job_location": "Helsinki ja 1 muu",
+        "job_title": "Asentajaksi VR FleetCarelle",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/vr-fleetcare-asentajaksi-vr-fleetcarelle-sdsuu-17052778",
+        "date": "10-07-23"
+    },
+    {
+        "company_name": "Diktamen Oy",
+        "job_location": "Helsinki ja 16 muuta",
+        "job_title": "Erikoissairaanhoidon tekstinkäsittelijä",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/diktamen-tekstinkasittelija-helsinki-sdsuu-17011313",
+        "date": "29-06-23"
+    },
+    {
+        "company_name": "Sweco Finland Oy",
+        "job_location": "Finland ja 27 muuta",
+        "job_title": "Energiamurroksen osaajia",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/sweco-energiamurroksen-osaajia-sdsuu-17033275",
+        "date": "24-07-23"
+    },
+    {
+        "company_name": "Pallet Partner avoin yhtiö",
+        "job_location": "Nurmijärvi",
+        "job_title": "Yhdistelmäajoneuvonkuljettaja, Nurmijärvi",
+        "job_url": "https://duunitori.fi/tyopaikat/tyo/yhdistelmaajoneuvonkuljettaja-sdsuu-17095779",
+        "date": "24-07-23"
+    }
+]
