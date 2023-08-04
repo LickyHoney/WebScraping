@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230630 12:56:40.568" rpa="false" schemaversion="4">
+<suite id="s1" name="AJS TC001 API" source="C:\Users\ett21010\Desktop\AJS Automation Repo\Features\API\AJS_TC001_API.robot">
+<test id="s1-t1" name="post request Test for Job Role and Location" line="4">
+<kw name="Given Input header" library="AJS_TC001_API_keywords">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{header}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<arg>User-Agent=RobotFramework</arg>
+<arg>Authorization=${X-RapidAPI-Key}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230630 12:56:40.849" level="INFO">&amp;{header} = { Content-Type=application/x-www-form-urlencoded | User-Agent=RobotFramework | Authorization=2c36597583mshb3ec6f540dfd966p181965jsne63a63911509 }</msg>
+<status status="PASS" starttime="20230630 12:56:40.848" endtime="20230630 12:56:40.849"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.848" endtime="20230630 12:56:40.849"/>
+</kw>
+<kw name="When Create Sessions" library="AJS_TC001_API_keywords">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>mysession</arg>
+<arg>${base_url}</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230630 12:56:40.850" level="INFO">Creating Session using : alias=mysession, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20230630 12:56:40.850" endtime="20230630 12:56:40.850"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.850" endtime="20230630 12:56:40.850"/>
+</kw>
+<kw name="Then Post response in csv and Validate responce" library="AJS_TC001_API_keywords">
+<arg>Test Automation</arg>
+<arg>Espoo</arg>
+<arg>/write_csv1</arg>
+<if>
+<branch type="IF" condition="$CSVname == $csvName1">
+<kw name="Input data for csv1" library="AJS_TC001_API_keywords">
+<var>${data}</var>
+<arg>${data1}</arg>
+<arg>${data2}</arg>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${data}</var>
+<arg>role=${role}</arg>
+<arg>loc=${loc}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230630 12:56:40.854" level="INFO">${data} = {'role': 'Test Automation', 'loc': 'Espoo'}</msg>
+<status status="PASS" starttime="20230630 12:56:40.854" endtime="20230630 12:56:40.854"/>
+</kw>
+<msg timestamp="20230630 12:56:40.854" level="INFO">${data} = {'role': 'Test Automation', 'loc': 'Espoo'}</msg>
+<status status="PASS" starttime="20230630 12:56:40.853" endtime="20230630 12:56:40.854"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.851" endtime="20230630 12:56:40.854"/>
+</branch>
+<branch type="ELSE">
+<kw name="Input data for csv2" library="AJS_TC001_API_keywords">
+<var>${data}</var>
+<arg>${data1}</arg>
+<arg>${data2}</arg>
+<status status="NOT RUN" starttime="20230630 12:56:40.855" endtime="20230630 12:56:40.855"/>
+</kw>
+<status status="NOT RUN" starttime="20230630 12:56:40.855" endtime="20230630 12:56:40.855"/>
+</branch>
+<status status="PASS" starttime="20230630 12:56:40.851" endtime="20230630 12:56:40.855"/>
+</if>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>${CSV name}</arg>
+<arg>data=${data}</arg>
+<arg>headers=${header}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20230630 12:56:40.863" level="INFO">POST Request : url=http://127.0.0.1:5000/write_csv1 
+ path_url=/write_csv1 
+ headers={'Content-Length': '30', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=role=Test+Automation&amp;loc=Espoo 
+ </msg>
+<msg timestamp="20230630 12:56:40.863" level="INFO">POST Response : url=http://127.0.0.1:5000/write_csv1 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/2.3.6 Python/3.11.4', 'Date': 'Fri, 30 Jun 2023 09:56:40 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '950', 'Connection': 'close'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;CSV File Created&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="/static/css/styles.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="/static/css/index.css"&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;div class="header"&gt;
+            &lt;button class="home" onclick="window.open('/')"&gt;&lt;i class="fa fa-home"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="file"&gt;
+            &lt;h3&gt;CSV File Created 'search_terms.csv' has been created successfully&lt;/h3&gt;
+            &lt;!-- &lt;p&gt;The CSV file 'search_terms.csv' has been created successfully.&lt;/p&gt; --&gt;
+        &lt;/div&gt;
+        &lt;div class="footer"&gt;
+            &lt;div class="content"&gt;
+                &lt;img src="https://www.etteplan.com/themes/custom/etteplan/logo.svg" &gt;
+                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; 
+ </msg>
+<msg timestamp="20230630 12:56:40.863" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230630 12:56:40.855" endtime="20230630 12:56:40.863"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code} 200</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230630 12:56:40.864" endtime="20230630 12:56:40.865"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Successfully created search_terms.csv file</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230630 12:56:40.865" endtime="20230630 12:56:40.865"/>
+</kw>
+<kw name="Validate responce" library="AJS_TC001_API_keywords">
+<arg>${response}</arg>
+<kw name="Convert To String" library="BuiltIn">
+<var>${response_of_input_data}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230630 12:56:40.866" level="INFO">${response_of_input_data} = &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;CSV File Created&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+    &lt;link rel="...</msg>
+<status status="PASS" starttime="20230630 12:56:40.866" endtime="20230630 12:56:40.866"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${response_of_input_data}</arg>
+<arg>CSV File Created</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230630 12:56:40.866" endtime="20230630 12:56:40.867"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230630 12:56:40.867" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20230630 12:56:40.867" endtime="20230630 12:56:40.867"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230630 12:56:40.867" endtime="20230630 12:56:40.867"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.866" endtime="20230630 12:56:40.867"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.851" endtime="20230630 12:56:40.867"/>
+</kw>
+<doc>This point User will enter Job role and job location</doc>
+<status status="PASS" starttime="20230630 12:56:40.847" endtime="20230630 12:56:40.868"/>
+</test>
+<test id="s1-t2" name="post request Test for Username and email" line="10">
+<kw name="Given Input header" library="AJS_TC001_API_keywords">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{header}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<arg>User-Agent=RobotFramework</arg>
+<arg>Authorization=${X-RapidAPI-Key}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230630 12:56:40.872" level="INFO">&amp;{header} = { Content-Type=application/x-www-form-urlencoded | User-Agent=RobotFramework | Authorization=2c36597583mshb3ec6f540dfd966p181965jsne63a63911509 }</msg>
+<status status="PASS" starttime="20230630 12:56:40.871" endtime="20230630 12:56:40.872"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.871" endtime="20230630 12:56:40.872"/>
+</kw>
+<kw name="When Create Sessions" library="AJS_TC001_API_keywords">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>mysession</arg>
+<arg>${base_url}</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230630 12:56:40.874" level="INFO">Creating Session using : alias=mysession, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20230630 12:56:40.874" endtime="20230630 12:56:40.875"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.873" endtime="20230630 12:56:40.875"/>
+</kw>
+<kw name="Then Post response in csv and Validate responce" library="AJS_TC001_API_keywords">
+<arg>Lauri</arg>
+<arg>lauri.kuusisto@etteplan.com</arg>
+<arg>/write_csv2</arg>
+<if>
+<branch type="IF" condition="$CSVname == $csvName1">
+<kw name="Input data for csv1" library="AJS_TC001_API_keywords">
+<var>${data}</var>
+<arg>${data1}</arg>
+<arg>${data2}</arg>
+<status status="NOT RUN" starttime="20230630 12:56:40.876" endtime="20230630 12:56:40.876"/>
+</kw>
+<status status="NOT RUN" starttime="20230630 12:56:40.876" endtime="20230630 12:56:40.876"/>
+</branch>
+<branch type="ELSE">
+<kw name="Input data for csv2" library="AJS_TC001_API_keywords">
+<var>${data}</var>
+<arg>${data1}</arg>
+<arg>${data2}</arg>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${data}</var>
+<arg>uname=${uname}</arg>
+<arg>email=${email}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230630 12:56:40.877" level="INFO">${data} = {'uname': 'Lauri', 'email': 'lauri.kuusisto@etteplan.com'}</msg>
+<status status="PASS" starttime="20230630 12:56:40.877" endtime="20230630 12:56:40.877"/>
+</kw>
+<msg timestamp="20230630 12:56:40.877" level="INFO">${data} = {'uname': 'Lauri', 'email': 'lauri.kuusisto@etteplan.com'}</msg>
+<status status="PASS" starttime="20230630 12:56:40.876" endtime="20230630 12:56:40.877"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.876" endtime="20230630 12:56:40.877"/>
+</branch>
+<status status="PASS" starttime="20230630 12:56:40.876" endtime="20230630 12:56:40.877"/>
+</if>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>${CSV name}</arg>
+<arg>data=${data}</arg>
+<arg>headers=${header}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20230630 12:56:40.884" level="INFO">POST Request : url=http://127.0.0.1:5000/write_csv2 
+ path_url=/write_csv2 
+ headers={'Content-Length': '47', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=uname=Lauri&amp;email=lauri.kuusisto%40etteplan.com 
+ </msg>
+<msg timestamp="20230630 12:56:40.884" level="INFO">POST Response : url=http://127.0.0.1:5000/write_csv2 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/2.3.6 Python/3.11.4', 'Date': 'Fri, 30 Jun 2023 09:56:40 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '942', 'Connection': 'close'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;CSV File Created&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="/static/css/styles.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="/static/css/index.css"&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;div class="header"&gt;
+            &lt;button class="home" onclick="window.open('/')"&gt;&lt;i class="fa fa-home"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="file"&gt;
+            &lt;h3&gt;CSV File Created 'contacts.csv' has been created successfully&lt;/h3&gt;
+            &lt;!-- &lt;p&gt;The CSV file 'contacts.csv' has been created successfully.&lt;/p&gt; --&gt;
+        &lt;/div&gt;
+        &lt;div class="footer"&gt;
+            &lt;div class="content"&gt;
+                &lt;img src="https://www.etteplan.com/themes/custom/etteplan/logo.svg" &gt;
+                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; 
+ </msg>
+<msg timestamp="20230630 12:56:40.884" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230630 12:56:40.877" endtime="20230630 12:56:40.884"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code} 200</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230630 12:56:40.884" endtime="20230630 12:56:40.886"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Successfully created search_terms.csv file</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230630 12:56:40.886" endtime="20230630 12:56:40.886"/>
+</kw>
+<kw name="Validate responce" library="AJS_TC001_API_keywords">
+<arg>${response}</arg>
+<kw name="Convert To String" library="BuiltIn">
+<var>${response_of_input_data}</var>
+<arg>${response.content}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230630 12:56:40.888" level="INFO">${response_of_input_data} = &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;CSV File Created&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+    &lt;link rel="...</msg>
+<status status="PASS" starttime="20230630 12:56:40.887" endtime="20230630 12:56:40.888"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${response_of_input_data}</arg>
+<arg>CSV File Created</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20230630 12:56:40.888" endtime="20230630 12:56:40.889"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230630 12:56:40.890" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20230630 12:56:40.889" endtime="20230630 12:56:40.890"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230630 12:56:40.890" endtime="20230630 12:56:40.890"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.887" endtime="20230630 12:56:40.890"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.876" endtime="20230630 12:56:40.890"/>
+</kw>
+<doc>This point User will enter name and email id</doc>
+<status status="PASS" starttime="20230630 12:56:40.869" endtime="20230630 12:56:40.890"/>
+</test>
+<test id="s1-t3" name="post request Test for python script to send email" line="16">
+<kw name="Given Input header" library="AJS_TC001_API_keywords">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{header}</var>
+<arg>Content-Type=${CONTENT_TYPE}</arg>
+<arg>User-Agent=RobotFramework</arg>
+<arg>Authorization=${X-RapidAPI-Key}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230630 12:56:40.892" level="INFO">&amp;{header} = { Content-Type=application/x-www-form-urlencoded | User-Agent=RobotFramework | Authorization=2c36597583mshb3ec6f540dfd966p181965jsne63a63911509 }</msg>
+<status status="PASS" starttime="20230630 12:56:40.892" endtime="20230630 12:56:40.893"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.892" endtime="20230630 12:56:40.893"/>
+</kw>
+<kw name="When Create Sessions" library="AJS_TC001_API_keywords">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>mysession</arg>
+<arg>${base_url}</arg>
+<arg>verify=true</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20230630 12:56:40.894" level="INFO">Creating Session using : alias=mysession, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<status status="PASS" starttime="20230630 12:56:40.894" endtime="20230630 12:56:40.894"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.894" endtime="20230630 12:56:40.895"/>
+</kw>
+<kw name="Then Post response in start program and Validate responce" library="AJS_TC001_API_keywords">
+<arg>/start_program</arg>
+<kw name="POST On Session" library="RequestsLibrary">
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>${CSV name}</arg>
+<arg>headers=${header}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<msg timestamp="20230630 12:57:43.769" level="INFO">POST Request : url=http://127.0.0.1:5000/start_program 
+ path_url=/start_program 
+ headers={'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg timestamp="20230630 12:57:43.769" level="INFO">POST Response : url=http://127.0.0.1:5000/start_program 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/2.3.6 Python/3.11.4', 'Date': 'Fri, 30 Jun 2023 09:57:43 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '891', 'Connection': 'close'} 
+ body=&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Status&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+    &lt;link rel="stylesheet" type="text/css" href="/static/css/styles.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="/static/css/index.css"&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;div class="header"&gt;
+            &lt;button class="home" onclick="window.open('/')"&gt;&lt;i class="fa fa-home"&gt;&lt;/i&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="file"&gt;
+            &lt;h3&gt;Email sent to Lauri successfully&lt;/h3&gt;
+            &lt;!-- &lt;p&gt;The CSV file '' has been created successfully.&lt;/p&gt; --&gt;
+        &lt;/div&gt;
+        &lt;div class="footer"&gt;
+            &lt;div class="content"&gt;
+                &lt;img src="https://www.etteplan.com/themes/custom/etteplan/logo.svg" &gt;
+                    
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt; 
+ </msg>
+<msg timestamp="20230630 12:57:43.769" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230630 12:56:40.895" endtime="20230630 12:57:43.769"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${response.status_code} 200</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230630 12:57:43.769" endtime="20230630 12:57:43.770"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Successfully email created</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230630 12:57:43.770" endtime="20230630 12:57:43.771"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${status_code}</var>
+<arg>${response.status_code}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230630 12:57:43.772" level="INFO">${status_code} = 200</msg>
+<status status="PASS" starttime="20230630 12:57:43.771" endtime="20230630 12:57:43.772"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${status_code}</arg>
+<arg>200</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230630 12:57:43.772" endtime="20230630 12:57:43.772"/>
+</kw>
+<status status="PASS" starttime="20230630 12:56:40.895" endtime="20230630 12:57:43.772"/>
+</kw>
+<doc>This point User will start program and email will be trigger</doc>
+<status status="PASS" starttime="20230630 12:56:40.891" endtime="20230630 12:57:43.773"/>
+</test>
+<status status="PASS" starttime="20230630 12:56:40.570" endtime="20230630 12:57:43.775"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="AJS TC001 API">AJS TC001 API</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

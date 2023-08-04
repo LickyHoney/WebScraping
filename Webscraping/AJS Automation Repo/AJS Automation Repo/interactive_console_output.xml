@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230629 09:11:40.119" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\ett21010\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open browser to AJS page">
+<msg timestamp="20230629 09:11:40.916" level="FAIL">No keyword with name 'Open browser to AJS page' found.</msg>
+<status status="FAIL" starttime="20230629 09:11:40.916" endtime="20230629 09:11:40.916"/>
+</kw>
+<kw name="Input keywords to Job Role and Job Location">
+<status status="NOT RUN" starttime="20230629 09:11:40.918" endtime="20230629 09:11:40.919"/>
+</kw>
+<kw name="Click &quot;Submit&quot; button">
+<status status="NOT RUN" starttime="20230629 09:11:40.920" endtime="20230629 09:11:40.920"/>
+</kw>
+<kw name="Confirmation page Should open up">
+<status status="NOT RUN" starttime="20230629 09:11:40.921" endtime="20230629 09:11:40.921"/>
+</kw>
+<kw name="Click the &quot;home&quot; button">
+<status status="NOT RUN" starttime="20230629 09:11:40.922" endtime="20230629 09:11:40.922"/>
+</kw>
+<status status="PASS" starttime="20230629 09:11:40.146" endtime="20230629 09:11:56.813"/>
+</kw>
+<status status="PASS" starttime="20230629 09:11:40.145" endtime="20230629 09:11:56.813"/>
+</test>
+<status status="PASS" starttime="20230629 09:11:40.122" endtime="20230629 09:11:56.814"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

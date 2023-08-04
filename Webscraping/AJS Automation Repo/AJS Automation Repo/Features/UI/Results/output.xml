@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230714 12:08:30.505" rpa="false" schemaversion="4">
+<suite id="s1" name="AJS TC002 UI" source="C:\Users\ett21010\Desktop\AJS Automation Repo\Features\UI\AJS_TC002_UI.robot">
+<test id="s1-t1" name="AJS user enter valid input" line="11">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:08:30.775" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:08:30.775" endtime="20230714 12:08:32.062"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:08:32.063" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:08:32.062" endtime="20230714 12:08:32.388"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:08:32.389" endtime="20230714 12:08:32.512"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:30.774" endtime="20230714 12:08:32.512"/>
+</kw>
+<kw name="Given User enter job role and job location" library="AJS_TC002_UI_keywords">
+<arg>${Valid_Job_Role}</arg>
+<arg>${Valid_Job_Location}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Fill the AJS form with keywords" library="AJS_TC002_UI_keywords">
+<arg>${role}</arg>
+<arg>${loc}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://label[text()='Job Role*']/following::input</arg>
+<arg>${Valid_Job_Role}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:32.514" level="INFO">Typing text 'test automation engineer' into text field 'xpath://label[text()='Job Role*']/following::input'.</msg>
+<status status="PASS" starttime="20230714 12:08:32.513" endtime="20230714 12:08:32.632"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="loc"]</arg>
+<arg>${Vaid_Location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:32.633" level="INFO">Typing text 'Espoo' into text field 'xpath://*[@id="loc"]'.</msg>
+<status status="PASS" starttime="20230714 12:08:32.632" endtime="20230714 12:08:32.694"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:08:35.696" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:08:32.694" endtime="20230714 12:08:35.696"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:32.513" endtime="20230714 12:08:35.696"/>
+</kw>
+<kw name="Click Submit button" library="AJS_TC002_UI_keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:08:35.697" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:08:35.696" endtime="20230714 12:08:35.706"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:job</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:35.707" level="INFO">Clicking button 'id:job'.</msg>
+<status status="PASS" starttime="20230714 12:08:35.707" endtime="20230714 12:08:35.846"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:08:38.847" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:08:35.846" endtime="20230714 12:08:38.847"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:35.696" endtime="20230714 12:08:38.847"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:32.512" endtime="20230714 12:08:38.847"/>
+</kw>
+<kw name="And Validate job role and job location" library="AJS_TC002_UI_keywords">
+<kw name="Confirmation page Should open up" library="AJS_TC002_UI_keywords">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>CSV File Created</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230714 12:08:38.860" level="INFO">Page title is 'CSV File Created'.</msg>
+<status status="PASS" starttime="20230714 12:08:38.849" endtime="20230714 12:08:38.860"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:08:41.861" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:08:38.860" endtime="20230714 12:08:41.861"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:38.849" endtime="20230714 12:08:41.861"/>
+</kw>
+<kw name="Click the &quot;home&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:41.862" level="INFO">Clicking button 'xpath:/html/body/div/div[1]/button'.</msg>
+<status status="PASS" starttime="20230714 12:08:41.861" endtime="20230714 12:08:41.934"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:08:46.936" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:08:41.935" endtime="20230714 12:08:46.936"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:41.861" endtime="20230714 12:08:46.936"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:38.848" endtime="20230714 12:08:46.936"/>
+</kw>
+<kw name="And User enter valid username and email" library="AJS_TC002_UI_keywords">
+<arg>${Valid_uname}</arg>
+<arg>${Valid_email_Id}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230714 12:08:46.937" endtime="20230714 12:08:46.947"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230714 12:08:46.947" endtime="20230714 12:08:46.970"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:46.971" level="INFO">Clicking button 'xpath://button[@id="user"]'.</msg>
+<status status="PASS" starttime="20230714 12:08:46.971" endtime="20230714 12:08:47.032"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:08:52.034" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:08:47.032" endtime="20230714 12:08:52.034"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="uname"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:52.035" level="INFO">Typing text 'Arya' into text field 'xpath://input[@id="uname"]'.</msg>
+<status status="PASS" starttime="20230714 12:08:52.034" endtime="20230714 12:08:52.152"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:52.152" level="INFO">Typing text 'arya.thamarakkulam@etteplan.com' into text field 'xpath://input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230714 12:08:52.152" endtime="20230714 12:08:52.239"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:08:57.240" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:08:52.239" endtime="20230714 12:08:57.240"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="save"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:57.241" level="INFO">Clicking button 'xpath://button[@id="save"]'.</msg>
+<status status="PASS" starttime="20230714 12:08:57.240" endtime="20230714 12:08:57.348"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:08:59.350" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230714 12:08:57.348" endtime="20230714 12:08:59.350"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:46.937" endtime="20230714 12:08:59.350"/>
+</kw>
+<kw name="When User send jobs to valid email" library="AJS_TC002_UI_keywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>CSV File Created 'contacts.csv' has been created successfully</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230714 12:08:59.375" level="INFO">Current page contains text 'CSV File Created 'contacts.csv' has been created successfully'.</msg>
+<status status="PASS" starttime="20230714 12:08:59.351" endtime="20230714 12:08:59.375"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:08:59.376" level="INFO">Clicking button 'xpath:/html/body/div/div[1]/button'.</msg>
+<status status="PASS" starttime="20230714 12:08:59.375" endtime="20230714 12:08:59.498"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230714 12:08:59.499" endtime="20230714 12:08:59.537"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:09:02.538" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:08:59.537" endtime="20230714 12:09:02.538"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+50)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:09:02.539" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+50)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:09:02.538" endtime="20230714 12:09:02.550"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:09:05.551" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:09:02.550" endtime="20230714 12:09:05.551"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[text()='Send Jobs to Email']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:09:05.552" level="INFO">Clicking button 'xpath://button[text()='Send Jobs to Email']'.</msg>
+<status status="PASS" starttime="20230714 12:09:05.552" endtime="20230714 12:09:51.531"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Email sent to ${Valid_uname} successfully</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230714 12:09:51.531" endtime="20230714 12:09:51.556"/>
+</kw>
+<status status="PASS" starttime="20230714 12:08:59.350" endtime="20230714 12:09:51.556"/>
+</kw>
+<kw name="Then Validate final screen" library="AJS_TC002_UI_keywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>successfully</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230714 12:09:51.574" level="INFO">Current page contains text 'successfully'.</msg>
+<status status="PASS" starttime="20230714 12:09:51.557" endtime="20230714 12:09:51.574"/>
+</kw>
+<status status="PASS" starttime="20230714 12:09:51.556" endtime="20230714 12:09:51.574"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:09:51.575" endtime="20230714 12:09:53.869"/>
+</kw>
+<status status="PASS" starttime="20230714 12:09:51.575" endtime="20230714 12:09:53.869"/>
+</kw>
+<doc>When AJS user enter valid job rol, valid job location, valid username and valid email id</doc>
+<tag>Happy path</tag>
+<status status="PASS" starttime="20230714 12:08:30.773" endtime="20230714 12:09:53.870"/>
+</test>
+<test id="s1-t2" name="Validate Close Button" line="20">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:09:53.876" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:09:53.876" endtime="20230714 12:09:55.022"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:09:55.022" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:09:55.022" endtime="20230714 12:09:55.339"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:09:55.339" endtime="20230714 12:09:55.455"/>
+</kw>
+<status status="PASS" starttime="20230714 12:09:53.875" endtime="20230714 12:09:55.455"/>
+</kw>
+<kw name="Given Click Close Button" library="AJS_TC002_UI_keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>(//button[@class='btn btn-primary'])[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:09:55.459" level="INFO">Clicking button '(//button[@class='btn btn-primary'])[2]'.</msg>
+<status status="PASS" starttime="20230714 12:09:55.458" endtime="20230714 12:09:55.576"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:09:57.576" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230714 12:09:55.576" endtime="20230714 12:09:57.576"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='btn btn-secondary']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:09:57.576" level="INFO">Clicking button '//button[@class='btn btn-secondary']'.</msg>
+<status status="PASS" starttime="20230714 12:09:57.576" endtime="20230714 12:09:57.654"/>
+</kw>
+<status status="PASS" starttime="20230714 12:09:55.457" endtime="20230714 12:09:57.654"/>
+</kw>
+<kw name="Then wait untill main page appears" library="AJS_TC002_UI_keywords">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230714 12:09:57.655" endtime="20230714 12:09:57.660"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>AJS - Automated Job Search</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230714 12:09:57.660" endtime="20230714 12:09:57.673"/>
+</kw>
+<status status="PASS" starttime="20230714 12:09:57.654" endtime="20230714 12:09:57.673"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:09:57.675" endtime="20230714 12:09:59.873"/>
+</kw>
+<status status="PASS" starttime="20230714 12:09:57.675" endtime="20230714 12:09:59.873"/>
+</kw>
+<doc>Validating  AJS user able to click on close button in pop up</doc>
+<tag>Happy path</tag>
+<status status="PASS" starttime="20230714 12:09:53.873" endtime="20230714 12:09:59.874"/>
+</test>
+<test id="s1-t3" name="AJS user enter Validate Job role Text Field with mandatory checks" line="26">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:09:59.876" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:09:59.876" endtime="20230714 12:10:01.084"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:10:01.084" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:10:01.084" endtime="20230714 12:10:01.359"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:10:01.359" endtime="20230714 12:10:01.483"/>
+</kw>
+<status status="PASS" starttime="20230714 12:09:59.876" endtime="20230714 12:10:01.483"/>
+</kw>
+<kw name="Given User enter job role and job location" library="AJS_TC002_UI_keywords">
+<arg>${EMPTY}</arg>
+<arg>${Valid_Job_Location}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Fill the AJS form with keywords" library="AJS_TC002_UI_keywords">
+<arg>${role}</arg>
+<arg>${loc}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://label[text()='Job Role*']/following::input</arg>
+<arg>${Valid_Job_Role}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:01.484" level="INFO">Typing text '' into text field 'xpath://label[text()='Job Role*']/following::input'.</msg>
+<status status="PASS" starttime="20230714 12:10:01.484" endtime="20230714 12:10:01.589"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="loc"]</arg>
+<arg>${Vaid_Location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:01.589" level="INFO">Typing text 'Espoo' into text field 'xpath://*[@id="loc"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:01.589" endtime="20230714 12:10:01.658"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:04.659" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:01.658" endtime="20230714 12:10:04.659"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:01.484" endtime="20230714 12:10:04.659"/>
+</kw>
+<kw name="Click Submit button" library="AJS_TC002_UI_keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:10:04.660" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:10:04.659" endtime="20230714 12:10:04.667"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:job</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:04.669" level="INFO">Clicking button 'id:job'.</msg>
+<status status="PASS" starttime="20230714 12:10:04.667" endtime="20230714 12:10:04.761"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:07.762" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:04.761" endtime="20230714 12:10:07.762"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:04.659" endtime="20230714 12:10:07.762"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:01.483" endtime="20230714 12:10:07.762"/>
+</kw>
+<kw name="When Wait untill it checks and display Error message for invalid job role" library="AJS_TC002_UI_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://p[text()='Please enter the Job role.']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230714 12:10:07.763" endtime="20230714 12:10:07.796"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://p[text()='Please enter the Job role.']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230714 12:10:07.808" level="INFO">Current page contains element 'xpath://p[text()='Please enter the Job role.']'.</msg>
+<status status="PASS" starttime="20230714 12:10:07.796" endtime="20230714 12:10:07.808"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:07.762" endtime="20230714 12:10:07.808"/>
+</kw>
+<kw name="Then Verify error message is correct for invalid job role" library="AJS_TC002_UI_keywords">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Result}</var>
+<arg>xpath://p[text()='Please enter the Job role.']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:07.837" level="INFO">${Result} = Please enter the Job role.</msg>
+<status status="PASS" starttime="20230714 12:10:07.809" endtime="20230714 12:10:07.837"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>Please enter the Job role.</arg>
+<arg>${Result}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230714 12:10:07.838" endtime="20230714 12:10:07.838"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:07.809" endtime="20230714 12:10:07.838"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:10:07.839" endtime="20230714 12:10:10.011"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:07.839" endtime="20230714 12:10:10.012"/>
+</kw>
+<doc>When AJS user enter empty field job rol, valid job location</doc>
+<tag>Unhappy path and mandatory check</tag>
+<status status="PASS" starttime="20230714 12:09:59.876" endtime="20230714 12:10:10.013"/>
+</test>
+<test id="s1-t4" name="Validate Username Text Field with mandatory checks" line="34">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:10:10.016" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:10:10.015" endtime="20230714 12:10:11.233"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:10:11.233" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:10:11.233" endtime="20230714 12:10:11.508"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:10:11.508" endtime="20230714 12:10:11.632"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:10.015" endtime="20230714 12:10:11.632"/>
+</kw>
+<kw name="Given User enter username and email" library="AJS_TC002_UI_keywords">
+<arg>${EMPTY}</arg>
+<arg>${valid_Email_ID}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Click the &quot;Next&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230714 12:10:11.634" endtime="20230714 12:10:11.674"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:11.678" level="INFO">Clicking button 'xpath://button[@id="user"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:11.676" endtime="20230714 12:10:11.760"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:16.762" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:11.761" endtime="20230714 12:10:16.762"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:11.633" endtime="20230714 12:10:16.762"/>
+</kw>
+<kw name="Input keywords to Username and email fields" library="AJS_TC002_UI_keywords">
+<arg>${username}</arg>
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="uname"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:16.762" level="INFO">Typing text '' into text field 'xpath://input[@id="uname"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:16.762" endtime="20230714 12:10:16.881"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:16.882" level="INFO">Typing text 'arya.thamarakkulam@etteplan.com' into text field 'xpath://input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:16.881" endtime="20230714 12:10:17.001"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:22.002" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:17.002" endtime="20230714 12:10:22.002"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:16.762" endtime="20230714 12:10:22.002"/>
+</kw>
+<kw name="Click the &quot;Submit&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="save"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:22.003" level="INFO">Clicking button 'xpath://button[@id="save"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:22.003" endtime="20230714 12:10:22.065"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:24.065" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:22.065" endtime="20230714 12:10:24.065"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:22.002" endtime="20230714 12:10:24.065"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:11.633" endtime="20230714 12:10:24.065"/>
+</kw>
+<kw name="When wait untill it checks and display Error message for Username" library="AJS_TC002_UI_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://p[text()='Please enter the Username']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230714 12:10:24.066" endtime="20230714 12:10:24.097"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://p[text()='Please enter the Username']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230714 12:10:24.111" level="INFO">Current page contains element 'xpath://p[text()='Please enter the Username']'.</msg>
+<status status="PASS" starttime="20230714 12:10:24.098" endtime="20230714 12:10:24.111"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:24.066" endtime="20230714 12:10:24.111"/>
+</kw>
+<kw name="Then verify error message is correct for Username" library="AJS_TC002_UI_keywords">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>xpath://p[text()='Please enter the Username']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:24.143" level="INFO">${result} = Please enter the Username</msg>
+<status status="PASS" starttime="20230714 12:10:24.112" endtime="20230714 12:10:24.143"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Please enter the Username</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230714 12:10:24.143" endtime="20230714 12:10:24.143"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:24.112" endtime="20230714 12:10:24.143"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:10:24.145" endtime="20230714 12:10:26.363"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:24.144" endtime="20230714 12:10:26.363"/>
+</kw>
+<doc>When AJS user enter empty username and valid email id</doc>
+<tag>Unhappy path and mandatory check</tag>
+<status status="PASS" starttime="20230714 12:10:10.015" endtime="20230714 12:10:26.364"/>
+</test>
+<test id="s1-t5" name="Validate Email Address Text Field with mandatory checks" line="41">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:10:26.367" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:10:26.367" endtime="20230714 12:10:27.618"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:10:27.619" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:10:27.618" endtime="20230714 12:10:27.883"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:10:27.883" endtime="20230714 12:10:28.000"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:26.367" endtime="20230714 12:10:28.000"/>
+</kw>
+<kw name="Given User enter username and email" library="AJS_TC002_UI_keywords">
+<arg>${Valid_uname}</arg>
+<arg>${EMPTY}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Click the &quot;Next&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230714 12:10:28.001" endtime="20230714 12:10:28.031"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:28.031" level="INFO">Clicking button 'xpath://button[@id="user"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:28.031" endtime="20230714 12:10:28.104"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:33.104" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:28.104" endtime="20230714 12:10:33.104"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:28.001" endtime="20230714 12:10:33.104"/>
+</kw>
+<kw name="Input keywords to Username and email fields" library="AJS_TC002_UI_keywords">
+<arg>${username}</arg>
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="uname"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:33.105" level="INFO">Typing text 'Arya' into text field 'xpath://input[@id="uname"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:33.105" endtime="20230714 12:10:33.209"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:33.210" level="INFO">Typing text '' into text field 'xpath://input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:33.209" endtime="20230714 12:10:33.264"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:38.264" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:33.264" endtime="20230714 12:10:38.264"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:33.104" endtime="20230714 12:10:38.264"/>
+</kw>
+<kw name="Click the &quot;Submit&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="save"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:38.264" level="INFO">Clicking button 'xpath://button[@id="save"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:38.264" endtime="20230714 12:10:38.333"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:40.334" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:38.333" endtime="20230714 12:10:40.334"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:38.264" endtime="20230714 12:10:40.334"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:28.001" endtime="20230714 12:10:40.334"/>
+</kw>
+<kw name="When wait untill it checks and display Error message for EmailID" library="AJS_TC002_UI_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Error_Message_EmailID_Vaidity_Check}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230714 12:10:40.335" endtime="20230714 12:10:40.366"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${Error_Message_EmailID_Vaidity_Check}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230714 12:10:40.376" level="INFO">Current page contains element 'xpath://p[text()='Please enter an email address']'.</msg>
+<status status="PASS" starttime="20230714 12:10:40.366" endtime="20230714 12:10:40.376"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:40.334" endtime="20230714 12:10:40.377"/>
+</kw>
+<kw name="Then verify error message is correct for EmailID" library="AJS_TC002_UI_keywords">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${Error_Message_EmailID_Vaidity_Check}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:40.398" level="INFO">${result} = Please enter an email address</msg>
+<status status="PASS" starttime="20230714 12:10:40.378" endtime="20230714 12:10:40.398"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Please enter an email address</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230714 12:10:40.398" endtime="20230714 12:10:40.399"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:40.377" endtime="20230714 12:10:40.399"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:10:40.400" endtime="20230714 12:10:42.598"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:40.400" endtime="20230714 12:10:42.598"/>
+</kw>
+<doc>When AJS user enter valid username and empty email id</doc>
+<tag>Unhappy path and mandatory check</tag>
+<status status="PASS" starttime="20230714 12:10:26.366" endtime="20230714 12:10:42.599"/>
+</test>
+<test id="s1-t6" name="Validate Job Role Text Field with Special Characters" line="48">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:10:42.603" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:10:42.603" endtime="20230714 12:10:43.851"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:10:43.851" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:10:43.851" endtime="20230714 12:10:44.110"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:10:44.110" endtime="20230714 12:10:44.227"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:42.602" endtime="20230714 12:10:44.227"/>
+</kw>
+<kw name="Given User enter job role and job location" library="AJS_TC002_UI_keywords">
+<arg>${Invalid_Job_Role_Special_Character}</arg>
+<arg>${Valid_Job_Location}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Fill the AJS form with keywords" library="AJS_TC002_UI_keywords">
+<arg>${role}</arg>
+<arg>${loc}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://label[text()='Job Role*']/following::input</arg>
+<arg>${Valid_Job_Role}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:44.229" level="INFO">Typing text '@@££$$$€€€' into text field 'xpath://label[text()='Job Role*']/following::input'.</msg>
+<status status="PASS" starttime="20230714 12:10:44.229" endtime="20230714 12:10:44.358"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="loc"]</arg>
+<arg>${Vaid_Location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:44.359" level="INFO">Typing text 'Espoo' into text field 'xpath://*[@id="loc"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:44.358" endtime="20230714 12:10:44.422"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:47.422" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:44.422" endtime="20230714 12:10:47.422"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:44.228" endtime="20230714 12:10:47.422"/>
+</kw>
+<kw name="Click Submit button" library="AJS_TC002_UI_keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:10:47.423" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:10:47.422" endtime="20230714 12:10:47.430"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:job</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:47.433" level="INFO">Clicking button 'id:job'.</msg>
+<status status="PASS" starttime="20230714 12:10:47.431" endtime="20230714 12:10:47.533"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:50.534" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:47.533" endtime="20230714 12:10:50.534"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:47.422" endtime="20230714 12:10:50.534"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:44.228" endtime="20230714 12:10:50.534"/>
+</kw>
+<kw name="Then Validate Error message for invalid Job Role" library="AJS_TC002_UI_keywords">
+<kw name="Wait untill it checks and display tooltip for invalid job role" library="AJS_TC002_UI_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="job"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:10:50.537" level="INFO">Clicking element 'xpath://*[@id="job"]'.</msg>
+<status status="PASS" starttime="20230714 12:10:50.537" endtime="20230714 12:10:50.597"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:53.598" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:50.597" endtime="20230714 12:10:53.598"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${validation_message}</var>
+<arg>return document.querySelector('#role').validationMessage</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:10:53.598" level="INFO">Executing JavaScript:
+return document.querySelector('#role').validationMessage
+Without any arguments.</msg>
+<msg timestamp="20230714 12:10:53.610" level="INFO">${validation_message} = Please enter valid Keyword</msg>
+<status status="PASS" starttime="20230714 12:10:53.598" endtime="20230714 12:10:53.610"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:10:56.610" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:10:53.610" endtime="20230714 12:10:56.610"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${validation_message}</arg>
+<arg>Please enter valid Keyword</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230714 12:10:56.610" endtime="20230714 12:10:56.610"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:50.535" endtime="20230714 12:10:56.610"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:50.535" endtime="20230714 12:10:56.610"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:10:56.611" endtime="20230714 12:10:58.787"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:56.611" endtime="20230714 12:10:58.787"/>
+</kw>
+<doc>When AJS user enter Special Characters field job rol, valid job location</doc>
+<tag>Unhappy path and error validation</tag>
+<status status="PASS" starttime="20230714 12:10:42.601" endtime="20230714 12:10:58.788"/>
+</test>
+<test id="s1-t7" name="Validate Job Role Text Field with numbers" line="54">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:10:58.790" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:10:58.790" endtime="20230714 12:11:00.028"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:11:00.029" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:11:00.029" endtime="20230714 12:11:00.312"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:11:00.312" endtime="20230714 12:11:00.431"/>
+</kw>
+<status status="PASS" starttime="20230714 12:10:58.790" endtime="20230714 12:11:00.431"/>
+</kw>
+<kw name="Given User enter job role and job location" library="AJS_TC002_UI_keywords">
+<arg>${Invalid_Job_Role_Numbers}</arg>
+<arg>${Valid_Job_Location}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Fill the AJS form with keywords" library="AJS_TC002_UI_keywords">
+<arg>${role}</arg>
+<arg>${loc}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://label[text()='Job Role*']/following::input</arg>
+<arg>${Valid_Job_Role}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:00.435" level="INFO">Typing text '1234567' into text field 'xpath://label[text()='Job Role*']/following::input'.</msg>
+<status status="PASS" starttime="20230714 12:11:00.434" endtime="20230714 12:11:00.614"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="loc"]</arg>
+<arg>${Vaid_Location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:00.616" level="INFO">Typing text 'Espoo' into text field 'xpath://*[@id="loc"]'.</msg>
+<status status="PASS" starttime="20230714 12:11:00.614" endtime="20230714 12:11:00.679"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:03.679" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:00.679" endtime="20230714 12:11:03.679"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:00.433" endtime="20230714 12:11:03.679"/>
+</kw>
+<kw name="Click Submit button" library="AJS_TC002_UI_keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:11:03.680" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:11:03.679" endtime="20230714 12:11:03.687"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:job</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:03.688" level="INFO">Clicking button 'id:job'.</msg>
+<status status="PASS" starttime="20230714 12:11:03.687" endtime="20230714 12:11:03.776"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:06.778" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:03.776" endtime="20230714 12:11:06.778"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:03.679" endtime="20230714 12:11:06.778"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:00.432" endtime="20230714 12:11:06.778"/>
+</kw>
+<kw name="Then Validate Error message for invalid Job Role" library="AJS_TC002_UI_keywords">
+<kw name="Wait untill it checks and display tooltip for invalid job role" library="AJS_TC002_UI_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="job"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:06.780" level="INFO">Clicking element 'xpath://*[@id="job"]'.</msg>
+<status status="PASS" starttime="20230714 12:11:06.780" endtime="20230714 12:11:06.844"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:09.844" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:06.844" endtime="20230714 12:11:09.844"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${validation_message}</var>
+<arg>return document.querySelector('#role').validationMessage</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:11:09.844" level="INFO">Executing JavaScript:
+return document.querySelector('#role').validationMessage
+Without any arguments.</msg>
+<msg timestamp="20230714 12:11:09.860" level="INFO">${validation_message} = Please enter valid Keyword</msg>
+<status status="PASS" starttime="20230714 12:11:09.844" endtime="20230714 12:11:09.860"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:12.860" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:09.860" endtime="20230714 12:11:12.860"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${validation_message}</arg>
+<arg>Please enter valid Keyword</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230714 12:11:12.860" endtime="20230714 12:11:12.860"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:06.779" endtime="20230714 12:11:12.860"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:06.779" endtime="20230714 12:11:12.860"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:11:12.861" endtime="20230714 12:11:15.063"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:12.861" endtime="20230714 12:11:15.063"/>
+</kw>
+<doc>When AJS user enter numbers field job rol, valid job location</doc>
+<tag>Unhappy path and error validation</tag>
+<status status="PASS" starttime="20230714 12:10:58.790" endtime="20230714 12:11:15.063"/>
+</test>
+<test id="s1-t8" name="Validate Job Role Text Field with numbers and Characters" line="60">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:11:15.067" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:11:15.067" endtime="20230714 12:11:16.293"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:11:16.293" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:11:16.293" endtime="20230714 12:11:16.556"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:11:16.556" endtime="20230714 12:11:16.669"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:15.066" endtime="20230714 12:11:16.669"/>
+</kw>
+<kw name="Given User enter job role and job location" library="AJS_TC002_UI_keywords">
+<arg>${Invalid_Job_Role_Numbers_Characters}</arg>
+<arg>${Valid_Job_Location}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Fill the AJS form with keywords" library="AJS_TC002_UI_keywords">
+<arg>${role}</arg>
+<arg>${loc}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://label[text()='Job Role*']/following::input</arg>
+<arg>${Valid_Job_Role}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:16.672" level="INFO">Typing text 'asdfg123455' into text field 'xpath://label[text()='Job Role*']/following::input'.</msg>
+<status status="PASS" starttime="20230714 12:11:16.672" endtime="20230714 12:11:16.785"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="loc"]</arg>
+<arg>${Vaid_Location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:16.786" level="INFO">Typing text 'Espoo' into text field 'xpath://*[@id="loc"]'.</msg>
+<status status="PASS" starttime="20230714 12:11:16.786" endtime="20230714 12:11:16.854"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:19.855" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:16.854" endtime="20230714 12:11:19.855"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:16.671" endtime="20230714 12:11:19.855"/>
+</kw>
+<kw name="Click Submit button" library="AJS_TC002_UI_keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:11:19.856" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:11:19.855" endtime="20230714 12:11:19.863"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:job</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:19.864" level="INFO">Clicking button 'id:job'.</msg>
+<status status="PASS" starttime="20230714 12:11:19.864" endtime="20230714 12:11:19.949"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:22.951" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:19.949" endtime="20230714 12:11:22.951"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:19.855" endtime="20230714 12:11:22.951"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:16.670" endtime="20230714 12:11:22.951"/>
+</kw>
+<kw name="Then Validate Error message for invalid Job Role" library="AJS_TC002_UI_keywords">
+<kw name="Wait untill it checks and display tooltip for invalid job role" library="AJS_TC002_UI_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="job"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:22.955" level="INFO">Clicking element 'xpath://*[@id="job"]'.</msg>
+<status status="PASS" starttime="20230714 12:11:22.955" endtime="20230714 12:11:23.025"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:26.025" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:23.025" endtime="20230714 12:11:26.025"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${validation_message}</var>
+<arg>return document.querySelector('#role').validationMessage</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:11:26.025" level="INFO">Executing JavaScript:
+return document.querySelector('#role').validationMessage
+Without any arguments.</msg>
+<msg timestamp="20230714 12:11:26.037" level="INFO">${validation_message} = Please enter valid Keyword</msg>
+<status status="PASS" starttime="20230714 12:11:26.025" endtime="20230714 12:11:26.037"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:29.037" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:26.037" endtime="20230714 12:11:29.037"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${validation_message}</arg>
+<arg>Please enter valid Keyword</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230714 12:11:29.037" endtime="20230714 12:11:29.037"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:22.954" endtime="20230714 12:11:29.037"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:22.954" endtime="20230714 12:11:29.037"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:11:29.038" endtime="20230714 12:11:31.227"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:29.038" endtime="20230714 12:11:31.227"/>
+</kw>
+<doc>When AJS user enter numbers and Characters in field job rol, valid job location</doc>
+<tag>Unhappy path and error validation</tag>
+<status status="PASS" starttime="20230714 12:11:15.065" endtime="20230714 12:11:31.228"/>
+</test>
+<test id="s1-t9" name="Validate Job Location Text Field with numbers" line="66">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:11:31.232" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:11:31.231" endtime="20230714 12:11:32.516"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:11:32.516" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:11:32.516" endtime="20230714 12:11:32.826"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:11:32.826" endtime="20230714 12:11:32.948"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:31.231" endtime="20230714 12:11:32.948"/>
+</kw>
+<kw name="Given User enter job role and job location" library="AJS_TC002_UI_keywords">
+<arg>${Valid_Job_Role}</arg>
+<arg>${Invalid_Job_Location_Numbers}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Fill the AJS form with keywords" library="AJS_TC002_UI_keywords">
+<arg>${role}</arg>
+<arg>${loc}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://label[text()='Job Role*']/following::input</arg>
+<arg>${Valid_Job_Role}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:32.950" level="INFO">Typing text 'test automation engineer' into text field 'xpath://label[text()='Job Role*']/following::input'.</msg>
+<status status="PASS" starttime="20230714 12:11:32.949" endtime="20230714 12:11:33.093"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="loc"]</arg>
+<arg>${Vaid_Location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:33.094" level="INFO">Typing text '1222222222' into text field 'xpath://*[@id="loc"]'.</msg>
+<status status="PASS" starttime="20230714 12:11:33.093" endtime="20230714 12:11:33.167"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:36.167" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:33.167" endtime="20230714 12:11:36.167"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:32.949" endtime="20230714 12:11:36.167"/>
+</kw>
+<kw name="Click Submit button" library="AJS_TC002_UI_keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:11:36.169" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:11:36.168" endtime="20230714 12:11:36.176"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:job</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:36.177" level="INFO">Clicking button 'id:job'.</msg>
+<status status="PASS" starttime="20230714 12:11:36.176" endtime="20230714 12:11:36.265"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:39.266" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:36.265" endtime="20230714 12:11:39.266"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:36.168" endtime="20230714 12:11:39.266"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:32.949" endtime="20230714 12:11:39.266"/>
+</kw>
+<kw name="Then Validate Error message for invalid job location" library="AJS_TC002_UI_keywords">
+<kw name="Wait untill it checks and display Error message for invalid job location" library="AJS_TC002_UI_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="job"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:39.269" level="INFO">Clicking element 'xpath://*[@id="job"]'.</msg>
+<status status="PASS" starttime="20230714 12:11:39.268" endtime="20230714 12:11:39.341"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:42.341" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:39.341" endtime="20230714 12:11:42.341"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${validation_message}</var>
+<arg>return document.querySelector('#loc').validationMessage</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:11:42.341" level="INFO">Executing JavaScript:
+return document.querySelector('#loc').validationMessage
+Without any arguments.</msg>
+<msg timestamp="20230714 12:11:42.350" level="INFO">${validation_message} = Please enter valid Job Location</msg>
+<status status="PASS" starttime="20230714 12:11:42.341" endtime="20230714 12:11:42.350"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:45.351" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:42.351" endtime="20230714 12:11:45.351"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${validation_message}</arg>
+<arg>Please enter valid Job Location</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230714 12:11:45.351" endtime="20230714 12:11:45.351"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:39.267" endtime="20230714 12:11:45.351"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:39.267" endtime="20230714 12:11:45.351"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:11:45.353" endtime="20230714 12:11:47.521"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:45.352" endtime="20230714 12:11:47.521"/>
+</kw>
+<doc>When AJS user enter valid field job rol and numbers job location</doc>
+<tag>Unhappy path and error validation</tag>
+<status status="PASS" starttime="20230714 12:11:31.230" endtime="20230714 12:11:47.521"/>
+</test>
+<test id="s1-t10" name="Validate Job Location Text Field with Special Characters" line="72">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:11:47.524" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:11:47.524" endtime="20230714 12:11:48.743"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:11:48.743" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:11:48.743" endtime="20230714 12:11:49.014"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:11:49.014" endtime="20230714 12:11:49.128"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:47.524" endtime="20230714 12:11:49.128"/>
+</kw>
+<kw name="Given User enter job role and job location" library="AJS_TC002_UI_keywords">
+<arg>${Valid_Job_Role}</arg>
+<arg>${Invalid_Job_Location_Special_Character}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Fill the AJS form with keywords" library="AJS_TC002_UI_keywords">
+<arg>${role}</arg>
+<arg>${loc}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://label[text()='Job Role*']/following::input</arg>
+<arg>${Valid_Job_Role}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:49.130" level="INFO">Typing text 'test automation engineer' into text field 'xpath://label[text()='Job Role*']/following::input'.</msg>
+<status status="PASS" starttime="20230714 12:11:49.130" endtime="20230714 12:11:49.270"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="loc"]</arg>
+<arg>${Vaid_Location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:49.271" level="INFO">Typing text '@@££$$$€€€' into text field 'xpath://*[@id="loc"]'.</msg>
+<status status="PASS" starttime="20230714 12:11:49.270" endtime="20230714 12:11:49.339"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:52.340" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:49.339" endtime="20230714 12:11:52.340"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:49.129" endtime="20230714 12:11:52.340"/>
+</kw>
+<kw name="Click Submit button" library="AJS_TC002_UI_keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:11:52.341" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:11:52.340" endtime="20230714 12:11:52.349"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:job</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:52.351" level="INFO">Clicking button 'id:job'.</msg>
+<status status="PASS" starttime="20230714 12:11:52.349" endtime="20230714 12:11:52.438"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:55.439" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:52.438" endtime="20230714 12:11:55.439"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:52.340" endtime="20230714 12:11:55.439"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:49.129" endtime="20230714 12:11:55.439"/>
+</kw>
+<kw name="Then Validate Error message for invalid job location" library="AJS_TC002_UI_keywords">
+<kw name="Wait untill it checks and display Error message for invalid job location" library="AJS_TC002_UI_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="job"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:11:55.441" level="INFO">Clicking element 'xpath://*[@id="job"]'.</msg>
+<status status="PASS" starttime="20230714 12:11:55.441" endtime="20230714 12:11:55.518"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:11:58.519" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:55.518" endtime="20230714 12:11:58.519"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${validation_message}</var>
+<arg>return document.querySelector('#loc').validationMessage</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:11:58.520" level="INFO">Executing JavaScript:
+return document.querySelector('#loc').validationMessage
+Without any arguments.</msg>
+<msg timestamp="20230714 12:11:58.531" level="INFO">${validation_message} = Please enter valid Job Location</msg>
+<status status="PASS" starttime="20230714 12:11:58.519" endtime="20230714 12:11:58.531"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:01.531" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:11:58.531" endtime="20230714 12:12:01.531"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${validation_message}</arg>
+<arg>Please enter valid Job Location</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230714 12:12:01.531" endtime="20230714 12:12:01.532"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:55.441" endtime="20230714 12:12:01.532"/>
+</kw>
+<status status="PASS" starttime="20230714 12:11:55.440" endtime="20230714 12:12:01.532"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:12:01.533" endtime="20230714 12:12:03.717"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:01.533" endtime="20230714 12:12:03.717"/>
+</kw>
+<doc>When AJS user enter valid field job rol and Special Characters job location</doc>
+<tag>Unhappy path and error validation</tag>
+<status status="PASS" starttime="20230714 12:11:47.523" endtime="20230714 12:12:03.718"/>
+</test>
+<test id="s1-t11" name="Validate Job Location Text Field with numbers and Characters" line="78">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:12:03.722" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:12:03.722" endtime="20230714 12:12:04.888"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:12:04.888" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:12:04.888" endtime="20230714 12:12:05.137"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:12:05.137" endtime="20230714 12:12:05.258"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:03.721" endtime="20230714 12:12:05.258"/>
+</kw>
+<kw name="Given User enter job role and job location" library="AJS_TC002_UI_keywords">
+<arg>${Valid_Job_Role}</arg>
+<arg>${Invalid_Job_Role_Numbers_Characters}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Fill the AJS form with keywords" library="AJS_TC002_UI_keywords">
+<arg>${role}</arg>
+<arg>${loc}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://label[text()='Job Role*']/following::input</arg>
+<arg>${Valid_Job_Role}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:05.261" level="INFO">Typing text 'test automation engineer' into text field 'xpath://label[text()='Job Role*']/following::input'.</msg>
+<status status="PASS" starttime="20230714 12:12:05.261" endtime="20230714 12:12:05.377"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="loc"]</arg>
+<arg>${Vaid_Location}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:05.378" level="INFO">Typing text 'asdfg123455' into text field 'xpath://*[@id="loc"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:05.378" endtime="20230714 12:12:05.447"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:08.448" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:05.447" endtime="20230714 12:12:08.448"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:05.260" endtime="20230714 12:12:08.448"/>
+</kw>
+<kw name="Click Submit button" library="AJS_TC002_UI_keywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY+100)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:12:08.450" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY+100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230714 12:12:08.449" endtime="20230714 12:12:08.459"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:job</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:08.461" level="INFO">Clicking button 'id:job'.</msg>
+<status status="PASS" starttime="20230714 12:12:08.460" endtime="20230714 12:12:08.564"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:11.565" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:08.564" endtime="20230714 12:12:11.565"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:08.448" endtime="20230714 12:12:11.565"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:05.259" endtime="20230714 12:12:11.565"/>
+</kw>
+<kw name="Then Validate Error message for invalid job location" library="AJS_TC002_UI_keywords">
+<kw name="Wait untill it checks and display Error message for invalid job location" library="AJS_TC002_UI_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="job"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:11.567" level="INFO">Clicking element 'xpath://*[@id="job"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:11.566" endtime="20230714 12:12:11.641"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:14.642" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:11.641" endtime="20230714 12:12:14.642"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${validation_message}</var>
+<arg>return document.querySelector('#loc').validationMessage</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:12:14.643" level="INFO">Executing JavaScript:
+return document.querySelector('#loc').validationMessage
+Without any arguments.</msg>
+<msg timestamp="20230714 12:12:14.653" level="INFO">${validation_message} = Please enter valid Job Location</msg>
+<status status="PASS" starttime="20230714 12:12:14.642" endtime="20230714 12:12:14.653"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:17.654" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:14.653" endtime="20230714 12:12:17.654"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${validation_message}</arg>
+<arg>Please enter valid Job Location</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230714 12:12:17.654" endtime="20230714 12:12:17.654"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:11.566" endtime="20230714 12:12:17.654"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:11.566" endtime="20230714 12:12:17.654"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:12:17.655" endtime="20230714 12:12:19.830"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:17.655" endtime="20230714 12:12:19.830"/>
+</kw>
+<doc>When AJS user enter valid field job rol and numbers and Characters job location</doc>
+<tag>Unhappy path and error validation</tag>
+<status status="PASS" starttime="20230714 12:12:03.720" endtime="20230714 12:12:19.831"/>
+</test>
+<test id="s1-t12" name="Validate user name Text Field with Special Characters" line="84">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:12:19.835" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:12:19.835" endtime="20230714 12:12:21.061"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:12:21.062" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:12:21.061" endtime="20230714 12:12:21.360"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:12:21.361" endtime="20230714 12:12:21.486"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:19.834" endtime="20230714 12:12:21.486"/>
+</kw>
+<kw name="Given User enter username and email" library="AJS_TC002_UI_keywords">
+<arg>${Invalid_Username_Special_Character}</arg>
+<arg>${valid_Email_ID}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Click the &quot;Next&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230714 12:12:21.488" endtime="20230714 12:12:21.516"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:21.517" level="INFO">Clicking button 'xpath://button[@id="user"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:21.517" endtime="20230714 12:12:21.590"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:26.591" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:21.590" endtime="20230714 12:12:26.591"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:21.488" endtime="20230714 12:12:26.591"/>
+</kw>
+<kw name="Input keywords to Username and email fields" library="AJS_TC002_UI_keywords">
+<arg>${username}</arg>
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="uname"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:26.592" level="INFO">Typing text '@@££$$€€€' into text field 'xpath://input[@id="uname"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:26.591" endtime="20230714 12:12:26.683"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:26.684" level="INFO">Typing text 'arya.thamarakkulam@etteplan.com' into text field 'xpath://input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:26.683" endtime="20230714 12:12:26.767"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:31.768" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:26.767" endtime="20230714 12:12:31.768"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:26.591" endtime="20230714 12:12:31.768"/>
+</kw>
+<kw name="Click the &quot;Submit&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="save"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:31.769" level="INFO">Clicking button 'xpath://button[@id="save"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:31.769" endtime="20230714 12:12:31.848"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:33.849" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:31.848" endtime="20230714 12:12:33.849"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:31.768" endtime="20230714 12:12:33.849"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:21.487" endtime="20230714 12:12:33.849"/>
+</kw>
+<kw name="Then wait untill it checks and display tooltip for Username" library="AJS_TC002_UI_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="save"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:33.858" level="INFO">Clicking element 'xpath://*[@id="save"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:33.857" endtime="20230714 12:12:33.959"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:36.960" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:33.959" endtime="20230714 12:12:36.960"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${validation_message}</var>
+<arg>return document.querySelector('#uname').validationMessage</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230714 12:12:36.960" level="INFO">Executing JavaScript:
+return document.querySelector('#uname').validationMessage
+Without any arguments.</msg>
+<msg timestamp="20230714 12:12:36.966" level="INFO">${validation_message} = Please enter valid Username</msg>
+<status status="PASS" starttime="20230714 12:12:36.960" endtime="20230714 12:12:36.966"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:39.967" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:36.966" endtime="20230714 12:12:39.967"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${validation_message}</arg>
+<arg>Please enter valid Username</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230714 12:12:39.967" endtime="20230714 12:12:39.967"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:33.857" endtime="20230714 12:12:39.967"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:12:39.969" endtime="20230714 12:12:42.166"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:39.968" endtime="20230714 12:12:42.166"/>
+</kw>
+<doc>When AJS user enter Special Characters username and valid email id</doc>
+<tag>Unhappy path and error validation</tag>
+<status status="PASS" starttime="20230714 12:12:19.833" endtime="20230714 12:12:42.167"/>
+</test>
+<test id="s1-t13" name="Validate email id Text Field with invalid email id" line="90">
+<kw name="Open the browser localHost url" library="AJS_TC002_UI_commonkeywords" type="SETUP">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>${BROWSER}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230714 12:12:42.171" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230714 12:12:42.170" endtime="20230714 12:12:43.326"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230714 12:12:43.326" level="INFO">Opening url 'http://127.0.0.1:5000'</msg>
+<status status="PASS" starttime="20230714 12:12:43.326" endtime="20230714 12:12:43.587"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230714 12:12:43.587" endtime="20230714 12:12:43.710"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:42.170" endtime="20230714 12:12:43.710"/>
+</kw>
+<kw name="Given User enter username and email" library="AJS_TC002_UI_keywords">
+<arg>${Valid_uname}</arg>
+<arg>${Invalid_Email_ID}</arg>
+<doc>User need to enter job role and job location</doc>
+<kw name="Click the &quot;Next&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20230714 12:12:43.712" endtime="20230714 12:12:43.747"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="user"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:43.748" level="INFO">Clicking button 'xpath://button[@id="user"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:43.748" endtime="20230714 12:12:43.840"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:48.841" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:43.840" endtime="20230714 12:12:48.841"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:43.712" endtime="20230714 12:12:48.841"/>
+</kw>
+<kw name="Input keywords to Username and email fields" library="AJS_TC002_UI_keywords">
+<arg>${username}</arg>
+<arg>${email}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="uname"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:48.842" level="INFO">Typing text 'Arya' into text field 'xpath://input[@id="uname"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:48.841" endtime="20230714 12:12:48.958"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:48.958" level="INFO">Typing text 'sshivani1091@gmail.com' into text field 'xpath://input[@id="email"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:48.958" endtime="20230714 12:12:49.045"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:54.047" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:49.045" endtime="20230714 12:12:54.047"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:48.841" endtime="20230714 12:12:54.047"/>
+</kw>
+<kw name="Click the &quot;Submit&quot; button" library="AJS_TC002_UI_keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[@id="save"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:54.048" level="INFO">Clicking button 'xpath://button[@id="save"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:54.047" endtime="20230714 12:12:54.108"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230714 12:12:56.108" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230714 12:12:54.108" endtime="20230714 12:12:56.108"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:54.047" endtime="20230714 12:12:56.108"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:43.711" endtime="20230714 12:12:56.108"/>
+</kw>
+<kw name="When wait untill it checks and display Error message for invalid EmailID" library="AJS_TC002_UI_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Error_Message_invalidEmailID_Vaidity_Check}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230714 12:12:56.109" endtime="20230714 12:12:56.141"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${Error_Message_invalidEmailID_Vaidity_Check}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230714 12:12:56.149" level="INFO">Current page contains element 'xpath://p[text()="Please enter an email address ending with '@etteplan.com'"]'.</msg>
+<status status="PASS" starttime="20230714 12:12:56.141" endtime="20230714 12:12:56.149"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:56.109" endtime="20230714 12:12:56.149"/>
+</kw>
+<kw name="Then verify error message is correct for invalidEmailID" library="AJS_TC002_UI_keywords">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${Error_Message_invalidEmailID_Vaidity_Check}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230714 12:12:56.180" level="INFO">${result} = Please enter an email address ending with '@etteplan.com'</msg>
+<status status="PASS" starttime="20230714 12:12:56.150" endtime="20230714 12:12:56.180"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Please enter an email address ending with '@etteplan.com'</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20230714 12:12:56.180" endtime="20230714 12:12:56.180"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:56.150" endtime="20230714 12:12:56.180"/>
+</kw>
+<kw name="Close Browser Session" library="AJS_TC002_UI_commonkeywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230714 12:12:56.180" endtime="20230714 12:12:58.366"/>
+</kw>
+<status status="PASS" starttime="20230714 12:12:56.180" endtime="20230714 12:12:58.366"/>
+</kw>
+<doc>When AJS user enter valid username and invalid email id</doc>
+<tag>Unhappy path and error validation</tag>
+<status status="PASS" starttime="20230714 12:12:42.169" endtime="20230714 12:12:58.367"/>
+</test>
+<doc>To validate the login form</doc>
+<status status="PASS" starttime="20230714 12:08:30.507" endtime="20230714 12:12:58.369"/>
+</suite>
+<statistics>
+<total>
+<stat pass="13" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Happy path</stat>
+<stat pass="8" fail="0" skip="0">Unhappy path and error validation</stat>
+<stat pass="3" fail="0" skip="0">Unhappy path and mandatory check</stat>
+</tag>
+<suite>
+<stat pass="13" fail="0" skip="0" id="s1" name="AJS TC002 UI">AJS TC002 UI</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
