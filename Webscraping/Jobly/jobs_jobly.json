@@ -1,142 +1,142 @@
 [
     {
-        "company_name": "Norsepower",
+        "company_name": "Nordic Alegna Group",
         "job_location": "Helsinki",
-        "job_title": "Automation Service Engineer",
-        "job_url": "https://www.jobly.fi/en/job/automation-service-engineer-1794546",
-        "date": "31-07-23"
+        "job_title": "Test Automation Engineer Trainee",
+        "job_url": "https://www.jobly.fi/en/job/test-automation-engineer-trainee-1811678",
+        "date": "14-08-23"
     },
     {
-        "company_name": "Kesko Oyj",
+        "company_name": "Planmeca Group",
         "job_location": "Helsinki",
-        "job_title": "Työnjohtaja K-Auto, Helsinki",
-        "job_url": "https://www.jobly.fi/en/job/tyonjohtaja-k-auto-helsinki-1777743",
-        "date": "01-08-23"
+        "job_title": "Testausautomaatioinsinööri (Test Automation Engineer)",
+        "job_url": "https://www.jobly.fi/en/job/testausautomaatioinsinoori-test-automation-engineer-1811474",
+        "date": "14-08-23"
     },
     {
-        "company_name": "Videoly",
+        "company_name": "Advenica",
         "job_location": "Helsinki",
-        "job_title": "Frontend Engineer",
-        "job_url": "https://www.jobly.fi/en/job/frontend-engineer-1763985",
-        "date": "01-08-23"
+        "job_title": "Senior Cyber Security Engineer",
+        "job_url": "https://www.jobly.fi/en/job/senior-cyber-security-engineer-1810959",
+        "date": "21-08-23"
     },
     {
-        "company_name": "Kesko Oyj",
+        "company_name": "Advenica",
         "job_location": "Helsinki",
-        "job_title": "Full-stack Developer K-Ruoka.fi -tiimiin",
-        "job_url": "https://www.jobly.fi/en/job/full-stack-developer-k-ruokafi-tiimiin-1748606",
-        "date": "31-07-23"
-    },
-    {
-        "company_name": "IsoSkills Oy",
-        "job_location": "Helsinki",
-        "job_title": "Automaatiotestaajia",
-        "job_url": "https://www.jobly.fi/en/job/automaatiotestaajia-1783147",
-        "date": "31-07-23"
-    },
-    {
-        "company_name": "Tukes",
-        "job_location": "Helsinki, Tampere",
-        "job_title": "Rakennustuotteiden asiantuntija markkinavalvontaan",
-        "job_url": "https://www.jobly.fi/en/job/rakennustuotteiden-asiantuntija-markkinavalvontaan-1795112",
-        "date": "31-07-23"
-    },
-    {
-        "company_name": "Alma Media",
-        "job_location": "Helsinki",
-        "job_title": "Software Developer - Business Insights",
-        "job_url": "https://www.jobly.fi/en/job/software-developer-business-insights-1788999",
-        "date": "31-07-23"
-    },
-    {
-        "company_name": "Alma Media",
-        "job_location": "Helsinki",
-        "job_title": "Data Developer, Alma Talent",
-        "job_url": "https://www.jobly.fi/en/job/data-developer-alma-talent-1788689",
-        "date": "31-07-23"
+        "job_title": "Junior Cyber Security Engineer, (osa-aikainen)",
+        "job_url": "https://www.jobly.fi/en/job/junior-cyber-security-engineer-osa-aikainen-1810960",
+        "date": "21-08-23"
     },
     {
         "company_name": "Barona Northstar Talent",
         "job_location": "Helsinki",
         "job_title": "Senior .NET/C# Developer - Capital Markets",
         "job_url": "https://www.jobly.fi/en/job/senior-net-c-developer-capital-markets-1788284",
-        "date": "31-07-23"
+        "date": "21-08-23"
+    },
+    {
+        "company_name": "Helborg",
+        "job_location": "Helsinki",
+        "job_title": "Data Engineer",
+        "job_url": "https://www.jobly.fi/en/job/data-engineer-1801465",
+        "date": "18-08-23"
+    },
+    {
+        "company_name": "Twoday Oy",
+        "job_location": "Helsinki, Tampere, Jyväskylä, Turku",
+        "job_title": "Spark-kehittäjä",
+        "job_url": "https://www.jobly.fi/en/job/spark-kehittaja-1808541",
+        "date": "18-08-23"
+    },
+    {
+        "company_name": "Thurne",
+        "job_location": "Helsinki",
+        "job_title": "Tuotemyyntipäällikkö",
+        "job_url": "https://www.jobly.fi/en/job/tuotemyyntipaallikko-1800962",
+        "date": "18-08-23"
     },
     {
         "company_name": "Clouder",
         "job_location": "Helsinki",
-        "job_title": "Backend Engineer",
+        "job_title": "Senior Software Engineer",
         "job_url": "https://www.jobly.fi/en/job/backend-engineer-1792996",
-        "date": "28-07-23"
+        "date": "18-08-23"
     },
     {
         "company_name": "Kesko Oyj",
         "job_location": "Helsinki, Turku, Tampere, Oulu, Kuopio, Joensuu",
         "job_title": "React Native developers for K-Ruoka Mobiili team, K Group",
         "job_url": "https://www.jobly.fi/en/job/react-native-developers-k-ruoka-mobiili-team-k-group-1637950",
-        "date": "27-07-23"
+        "date": "17-08-23"
     },
     {
-        "company_name": "Kesko Oyj",
-        "job_location": "Helsinki, Helsinki, Turku, Tampere, Jyväskylä, Oulu, Kuopio, Joensuu",
-        "job_title": "Senior Full-stack Developer K-Ruoka.fi tiimiin",
-        "job_url": "https://www.jobly.fi/en/job/senior-full-stack-developer-k-ruokafi-tiimiin-1657666",
-        "date": "27-07-23"
+        "company_name": "Barona Teollisuus",
+        "job_location": "Helsinki",
+        "job_title": "Mekaaninen kokoonpanija ABB Oy Drivesille",
+        "job_url": "https://www.jobly.fi/en/job/mekaaninen-kokoonpanija-abb-oy-drivesille-1815899",
+        "date": "17-08-23"
     },
     {
-        "company_name": "Kela",
-        "job_location": "Helsinki, Turku, Jyväskylä, Uusimaa, Varsinais-Suomi, Keski-Suomi",
-        "job_title": "Testaaja ja sovelluskehittäjä,  IT-Sote-yksikkö",
-        "job_url": "https://www.jobly.fi/en/job/testaaja-ja-sovelluskehittaja-it-sote-yksikko-1774300",
-        "date": "27-07-23"
-    },
-    {
-        "company_name": "Väylävirasto",
-        "job_location": "Helsinki, Uusimaa",
-        "job_title": "Projekti-insinööri, ratainfrarakentaminen",
-        "job_url": "https://www.jobly.fi/en/job/projekti-insinoori-ratainfrarakentaminen-1760530",
-        "date": "27-07-23"
-    },
-    {
-        "company_name": "Väylävirasto",
-        "job_location": "Helsinki, Uusimaa",
-        "job_title": "Radansuunnittelun projekti-insinööri",
-        "job_url": "https://www.jobly.fi/en/job/radansuunnittelun-projekti-insinoori-1786129",
-        "date": "27-07-23"
+        "company_name": "Click Henkilöstöpalvelut Oy",
+        "job_location": "Helsinki",
+        "job_title": "Sähkö-/automaatioasentaja (Pk-seutu), 2 paikkaa",
+        "job_url": "https://www.jobly.fi/en/job/sahko-automaatioasentaja-pk-seutu-2-paikkaa-1815407",
+        "date": "17-08-23"
     },
     {
         "company_name": "Singa",
         "job_location": "Helsinki",
-        "job_title": "Customer Engagement Marketer",
-        "job_url": "https://www.jobly.fi/en/job/customer-engagement-marketer-1776071",
-        "date": "26-07-23"
+        "job_title": "Data Engineer",
+        "job_url": "https://www.jobly.fi/en/job/data-engineer-1806983",
+        "date": "16-08-23"
     },
     {
         "company_name": "iconicchain",
         "job_location": "Helsinki",
         "job_title": "Senior Software Tester",
         "job_url": "https://www.jobly.fi/en/job/senior-software-tester-1785959",
-        "date": "26-07-23"
+        "date": "16-08-23"
     },
     {
         "company_name": "iconicchain",
         "job_location": "Helsinki",
         "job_title": "Senior IT Infrastructure and Security Expert",
         "job_url": "https://www.jobly.fi/en/job/senior-it-infrastructure-and-security-expert-1785960",
-        "date": "26-07-23"
+        "date": "16-08-23"
     },
     {
-        "company_name": "Klüber Lubrication",
-        "job_location": "Turku, Helsinki, Tampere, Jyväskylä",
-        "job_title": "Myynti-insinööri",
-        "job_url": "https://www.jobly.fi/en/job/myynti-insinoori-1766274",
-        "date": "26-07-23"
+        "company_name": "Kela",
+        "job_location": "Helsinki, Jyväskylä, Kuopio, Oulu, Pori, Tampere, Turku, Uusimaa, Keski-Suomi, Pohjois-Savo, Pohjois-Pohjanmaa, Satakunta, Pirkanmaa, Varsinais-Suomi",
+        "job_title": "Testausasiantuntija, IT-tietoyksikkö",
+        "job_url": "https://www.jobly.fi/en/job/testausasiantuntija-it-tietoyksikko-1806345",
+        "date": "16-08-23"
     },
     {
-        "company_name": "Liikenne- ja viestintävirasto Traficom",
+        "company_name": "Kuuasema",
         "job_location": "Helsinki",
-        "job_title": "ICT-asiantuntija, palvelinylläpito",
-        "job_url": "https://www.jobly.fi/en/job/ict-asiantuntija-palvelinyllapito-1759765",
-        "date": "26-07-23"
+        "job_title": "Backend Engineer (Java)",
+        "job_url": "https://www.jobly.fi/en/job/backend-engineer-java-1805996",
+        "date": "16-08-23"
+    },
+    {
+        "company_name": "Norsepower",
+        "job_location": "Helsinki",
+        "job_title": "Electrical Designer",
+        "job_url": "https://www.jobly.fi/en/job/electrical-designer-1805767",
+        "date": "16-08-23"
+    },
+    {
+        "company_name": "Huuva",
+        "job_location": "Helsinki",
+        "job_title": "Data Engineer",
+        "job_url": "https://www.jobly.fi/en/job/data-engineer-1734765",
+        "date": "16-08-23"
+    },
+    {
+        "company_name": "Hookle",
+        "job_location": "Helsinki",
+        "job_title": "Senior Frontend Developer, Flutter",
+        "job_url": "https://www.jobly.fi/en/job/senior-frontend-developer-flutter-1790989",
+        "date": "15-08-23"
     }
 ]

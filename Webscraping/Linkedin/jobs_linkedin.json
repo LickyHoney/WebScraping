@@ -1,352 +1,177 @@
 [
     {
-        "title": "Software Tester",
-        "link": "https://fi.linkedin.com/jobs/view/software-tester-at-jefferson-frank-3589861709?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=CgR2resEnjg3xxaYYeIMEw%3D%3D&position=1&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Jefferson Frank",
-        "location": "Espoo, Uusimaa, Finland",
-        "date": "29-04-23"
+        "title": "Quality Assurance Lead",
+        "link": "https://fi.linkedin.com/jobs/view/quality-assurance-lead-at-visma-finland-3697570517?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=PaJynLSXjftwsngIl0m5HA%3D%3D&position=1&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Visma Finland",
+        "location": "Uusimaa, Finland",
+        "date": "18-08-23"
     },
     {
-        "title": "Software Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/software-engineer-at-iceye-3676203353?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=I72u49tKsBYN2dB6wVGETw%3D%3D&position=2&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "title": "Senior Design QA Engineer - Finland",
+        "link": "https://fi.linkedin.com/jobs/view/senior-design-qa-engineer-finland-at-iceye-3694838931?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=R3jmpJ0XdVoFrHBXIpMQkg%3D%3D&position=2&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "ICEYE",
         "location": "Espoo, Uusimaa, Finland",
+        "date": "15-08-23"
+    },
+    {
+        "title": "Freelance Test Automation Engineer",
+        "link": "https://fi.linkedin.com/jobs/view/freelance-test-automation-engineer-at-jefferson-frank-3675300473?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=rV1I03bvA%2BE%2F%2FOj%2BuZz%2FqQ%3D%3D&position=3&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Jefferson Frank",
+        "location": "Helsinki, Uusimaa, Finland",
         "date": "26-07-23"
     },
     {
         "title": "Test Automation Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-engineer-at-nitor-3389138649?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=fnJO7rFXqmq8jEc2r1lZqg%3D%3D&position=3&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "link": "https://fi.linkedin.com/jobs/view/test-automation-engineer-at-nitor-3389138649?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=b2uDCqkJRNdjKI117cZU6A%3D%3D&position=4&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "Nitor",
         "location": "Helsinki, Uusimaa, Finland",
-        "date": "11-07-23"
+        "date": "01-08-23"
+    },
+    {
+        "title": "Test Automation",
+        "link": "https://fi.linkedin.com/jobs/view/test-automation-at-nigel-frank-international-3689489340?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=jqEgL4VfdZDpg9ddM%2Bw4wA%3D%3D&position=5&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Nigel Frank International",
+        "location": "Helsinki, Uusimaa, Finland",
+        "date": "12-08-23"
     },
     {
         "title": "Senior Electronics Test Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/senior-electronics-test-engineer-at-iceye-3028739119?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=84H3bDLs%2BydHzEaNJp0Y7A%3D%3D&position=4&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "ICEYE",
-        "location": "Espoo, Uusimaa, Finland",
-        "date": "13-03-23"
-    },
-    {
-        "title": "Software Test Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/software-test-engineer-at-patria-3642998784?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=SyMJaGhqd1JEuHz983fbWA%3D%3D&position=5&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Patria",
-        "location": "Tampere, Pirkanmaa, Finland",
-        "date": "26-07-23"
-    },
-    {
-        "title": "Clojure developer",
-        "link": "https://fi.linkedin.com/jobs/view/clojure-developer-at-iprally-3624826968?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=gx%2BdYOpRJd%2BtOGC9cUfQbQ%3D%3D&position=6&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "IPRally",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "01-06-23"
-    },
-    {
-        "title": "QA Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-at-jefferson-frank-3647273151?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=1N8yI9ohFeayjQzm2XkyeQ%3D%3D&position=7&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Jefferson Frank",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "29-06-23"
-    },
-    {
-        "title": "QA Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-at-nigel-frank-international-3649826877?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=YLMOFxQ71zT1uvXM4dsLZA%3D%3D&position=8&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Nigel Frank International",
-        "location": "Helsinki Metropolitan Area",
-        "date": "01-07-23"
-    },
-    {
-        "title": "Web Developer, Backend Developer  &amp; Test Automation Engineer roles, Finland",
-        "link": "https://fi.linkedin.com/jobs/view/web-developer-backend-developer-amp-test-automation-engineer-roles-finland-at-iheadhunt-3664559683?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=d2XbXBsVx1WZ5gLJy2tYvw%3D%3D&position=9&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "iHeadHunt",
-        "location": "Finland",
-        "date": "14-07-23"
-    },
-    {
-        "title": "QA Engineer - Helsinki",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-helsinki-at-frg-technology-consulting-3657501718?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=p4Y0ZQpROMqWusqZuuKy9w%3D%3D&position=10&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "FRG Technology Consulting",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "08-07-23"
-    },
-    {
-        "title": "QA Engineer - Helsinki - Hybrid - Up to €4,500 +",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-helsinki-hybrid-up-to-%E2%82%AC4-500-%2B-at-jefferson-frank-3649821096?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=fwLBvvQ53tyjVbDOkrxPxA%3D%3D&position=11&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Jefferson Frank",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "01-07-23"
-    },
-    {
-        "title": "Test Automation Developer",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-developer-at-insta-3676484683?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=AeV3q9Xothfr7lLKw3881Q%3D%3D&position=12&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Insta",
-        "location": "Tampere, Pirkanmaa, Finland",
-        "date": "27-07-23"
-    },
-    {
-        "title": "Freelance Test Automation Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/freelance-test-automation-engineer-at-jefferson-frank-3675300473?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=Wl2lmxdJGcsXfk%2F9dxwT2Q%3D%3D&position=13&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Jefferson Frank",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "26-07-23"
-    },
-    {
-        "title": "Software Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/software-engineer-at-hedera-dx-3664570585?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=PGToErDVYY8NaZ1NvqzCYA%3D%3D&position=14&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Hedera Dx",
-        "location": "Finland",
-        "date": "14-07-23"
-    },
-    {
-        "title": "Staff Software Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/staff-software-engineer-at-iceye-3676195872?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=%2FFLDcpCLnQrFbFjKsaVBJA%3D%3D&position=15&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "ICEYE",
-        "location": "Espoo, Uusimaa, Finland",
-        "date": "26-07-23"
-    },
-    {
-        "title": "QA Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-at-nigel-frank-international-3654017477?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=divQm5p3EXJ46uFfJCXt2A%3D%3D&position=16&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Nigel Frank International",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "05-07-23"
-    },
-    {
-        "title": "Software Design Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/software-design-engineer-at-onenav-inc-3655665133?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=qEm0n7i0poGOEejEPGYZ2A%3D%3D&position=17&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "oneNav, Inc.",
-        "location": "Tampere Metropolitan Area",
-        "date": "26-07-23"
-    },
-    {
-        "title": "JUNIOR DEVELOPER - Dubai, UAE",
-        "link": "https://fi.linkedin.com/jobs/view/junior-developer-dubai-uae-at-cobblestone-energy-3642302624?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=BLW4dElmErMIdI%2F%2FqQBDHQ%3D%3D&position=18&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Cobblestone Energy",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "22-06-23"
-    },
-    {
-        "title": "QA Engineer/Developer - Espoo - Hybrid",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-developer-espoo-hybrid-at-jefferson-frank-3671478108?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=bGL%2F4A%2FA3%2Fr8h77%2FcSyfpQ%3D%3D&position=19&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Jefferson Frank",
-        "location": "Espoo, Uusimaa, Finland",
-        "date": "21-07-23"
-    },
-    {
-        "title": "Test Automation/QA Engineer Open Application",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-qa-engineer-open-application-at-nigel-frank-international-3609615297?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=eqWgY6JliBPrBXUBdJEOcQ%3D%3D&position=20&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Nigel Frank International",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "19-05-23"
-    },
-    {
-        "title": "Software Engineer (multiple positions)",
-        "link": "https://fi.linkedin.com/jobs/view/software-engineer-multiple-positions-at-celltech-solutions-oy-3664523671?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=3V7s9W4m%2FnrqhmuKGnL9CQ%3D%3D&position=21&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Celltech Solutions Oy",
-        "location": "Finland",
-        "date": "14-07-23"
-    },
-    {
-        "title": "Software developer",
-        "link": "https://fi.linkedin.com/jobs/view/software-developer-at-oliver-parks-2626288420?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=RsH%2BCoYCOOa1YQAlxw41aQ%3D%3D&position=22&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Oliver Parks",
-        "location": "Finland",
-        "date": "10-06-22"
-    },
-    {
-        "title": "DigiStar - Junior Software Tester",
-        "link": "https://fi.linkedin.com/jobs/view/digistar-junior-software-tester-at-innofactor-3616488248?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=2YsCUv94dq9RJor4rFzyKA%3D%3D&position=23&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Innofactor",
-        "location": "Espoo, Uusimaa, Finland",
-        "date": "24-05-23"
-    },
-    {
-        "title": "Ohjelmistokehittäjä",
-        "link": "https://fi.linkedin.com/jobs/view/ohjelmistokehitt%C3%A4j%C3%A4-at-oliver-parks-2429972806?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=Eb15EJgBDO%2BoiOCAX8vVEQ%3D%3D&position=24&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Oliver Parks",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "10-06-22"
-    },
-    {
-        "title": "Mobile Developer",
-        "link": "https://fi.linkedin.com/jobs/view/mobile-developer-at-gazelle-global-3674675589?refId=Oo3yoYw6Fft0TqZVqeJ1zQ%3D%3D&trackingId=5oGT5L9jt9mCqy1Sp2MB1Q%3D%3D&position=25&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Gazelle Global",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "25-07-23"
-    },
-    {
-        "title": "Test Automation Developer",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-developer-at-insta-3676484683?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=fQf%2FMnT11GUf8bsEkOlH9A%3D%3D&position=1&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Insta",
-        "location": "Tampere, Pirkanmaa, Finland",
-        "date": "27-07-23"
-    },
-    {
-        "title": "Freelance Test Automation Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/freelance-test-automation-engineer-at-jefferson-frank-3675300473?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=Q8xZXbl4U4sfGdprgvY8OQ%3D%3D&position=2&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Jefferson Frank",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "26-07-23"
-    },
-    {
-        "title": "DevOps Testers with Test Automation",
-        "link": "https://fi.linkedin.com/jobs/view/devops-testers-with-test-automation-at-grupo-norconsulting-3655366553?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=yZtVk7qsU7R%2FxR6xMhi%2BCw%3D%3D&position=3&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Grupo Norconsulting",
-        "location": "Greater Oulu Area",
-        "date": "11-06-23"
-    },
-    {
-        "title": "Test Automation Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-engineer-at-nitor-3389138649?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=db5w1LD93%2FQncuaGh86LaQ%3D%3D&position=4&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Nitor",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "11-07-23"
-    },
-    {
-        "title": "Senior Electronics Test Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/senior-electronics-test-engineer-at-iceye-3028739119?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=sWITWoQ%2FXxzKiCnNAzwPQw%3D%3D&position=5&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "link": "https://fi.linkedin.com/jobs/view/senior-electronics-test-engineer-at-iceye-3028739119?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=jIdxK6owz2xqUmUG3cZxXQ%3D%3D&position=6&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "ICEYE",
         "location": "Espoo, Uusimaa, Finland",
         "date": "13-03-23"
     },
     {
         "title": "Test Automation Developer",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-developer-at-insta-3612692600?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=9CCgCGxWp4gl7%2BTC1YLQ%2FQ%3D%3D&position=6&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "link": "https://fi.linkedin.com/jobs/view/test-automation-developer-at-insta-3612692600?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=7mWkWgQPaNtmCAS0NIFsRA%3D%3D&position=7&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "Insta",
         "location": "Tampere, Pirkanmaa, Finland",
         "date": "04-05-23"
     },
     {
-        "title": "Software Tester",
-        "link": "https://fi.linkedin.com/jobs/view/software-tester-at-jefferson-frank-3589861709?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=vGYnE3hNjlB2hbR%2Bd%2F%2BYbw%3D%3D&position=7&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Jefferson Frank",
-        "location": "Espoo, Uusimaa, Finland",
-        "date": "29-04-23"
+        "title": "Test Engineer",
+        "link": "https://fi.linkedin.com/jobs/view/test-engineer-at-kempower-3684939983?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=eUghGp4fAhWp7CTT1dTw5g%3D%3D&position=8&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Kempower",
+        "location": "Hollola, Päijät-Häme, Finland",
+        "date": "09-08-23"
     },
     {
-        "title": "QA Engineer - Helsinki",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-helsinki-at-frg-technology-consulting-3657501718?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=RrF3Zz%2BzvjlzPVyPQ7Uj3Q%3D%3D&position=8&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "FRG Technology Consulting",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "08-07-23"
+        "title": "Testausautomaatioinsinööri (Test Automation Engineer)",
+        "link": "https://fi.linkedin.com/jobs/view/testausautomaatioinsin%C3%B6%C3%B6ri-test-automation-engineer-at-planmeca-3694013790?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=4DfrHev5opcOoD51bQCphQ%3D%3D&position=9&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Planmeca",
+        "location": "Finland",
+        "date": "14-08-23"
     },
     {
         "title": "Test Automation/QA Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-qa-engineer-at-nigel-frank-international-3648290738?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=4ltZZ3X67WcYvDSoaKaIQA%3D%3D&position=9&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "link": "https://fi.linkedin.com/jobs/view/test-automation-qa-engineer-at-nigel-frank-international-3648290738?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=%2F%2FvMaBt%2Fj1NThP5ufwGSDQ%3D%3D&position=10&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "Nigel Frank International",
         "location": "Jyväskylä, Central Finland, Finland",
         "date": "30-06-23"
     },
     {
-        "title": "Test Automation/QA Engineer Open Application",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-qa-engineer-open-application-at-nigel-frank-international-3609615297?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=y0a%2F95mDbDaOjzzCeRI4mQ%3D%3D&position=10&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "title": "Test Automation Engineer",
+        "link": "https://fi.linkedin.com/jobs/view/test-automation-engineer-at-nigel-frank-international-3675171965?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=EpyjMfJTqVXhXfFY0AutEA%3D%3D&position=11&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "Nigel Frank International",
+        "location": "Tampere, Pirkanmaa, Finland",
+        "date": "29-07-23"
+    },
+    {
+        "title": "QA Engineer - Helsinki",
+        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-helsinki-at-frg-technology-consulting-3657501718?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=1zkGTC0xg9oISxfqk4QVPw%3D%3D&position=12&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "FRG Technology Consulting",
         "location": "Helsinki, Uusimaa, Finland",
-        "date": "19-05-23"
+        "date": "08-07-23"
     },
     {
         "title": "QA Engineer - Helsinki - Hybrid - Up to €4,500 +",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-helsinki-hybrid-up-to-%E2%82%AC4-500-%2B-at-jefferson-frank-3649821096?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=NrkIlc1AXEoL6Nujr9T12Q%3D%3D&position=11&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-helsinki-hybrid-up-to-%E2%82%AC4-500-%2B-at-jefferson-frank-3649821096?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=gMicK0084EADA%2FPlFHoTCQ%3D%3D&position=13&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "Jefferson Frank",
         "location": "Helsinki, Uusimaa, Finland",
         "date": "01-07-23"
     },
     {
+        "title": "Test Automation Specialist",
+        "link": "https://fi.linkedin.com/jobs/view/test-automation-specialist-at-knowit-3265248171?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=ibsce7h5%2BgKnGPTK0Z3Y7w%3D%3D&position=14&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Knowit",
+        "location": "Helsinki Metropolitan Area",
+        "date": "07-08-23"
+    },
+    {
         "title": "QA Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-at-jefferson-frank-3647273151?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=IUdHKH3tMiLS1ln2v%2FAJSg%3D%3D&position=12&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-at-jefferson-frank-3647273151?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=MA9liDX5CpefNvjMXjhOfw%3D%3D&position=15&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "Jefferson Frank",
         "location": "Helsinki, Uusimaa, Finland",
         "date": "29-06-23"
     },
     {
-        "title": "Software Verification Engineer (Test Automation)",
-        "link": "https://fi.linkedin.com/jobs/view/software-verification-engineer-test-automation-at-varian-3675090593?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=4UYTUE9%2B8%2Frv%2FgxcHO%2FSTA%3D%3D&position=13&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Varian",
+        "title": "Senior QA Engineer",
+        "link": "https://fi.linkedin.com/jobs/view/senior-qa-engineer-at-rovio-entertainment-corporation-3680149183?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=aMv3EGvpvr2Nfi%2BpdRXe4g%3D%3D&position=16&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Rovio Entertainment Corporation",
         "location": "Helsinki, Uusimaa, Finland",
-        "date": "25-07-23"
+        "date": "03-08-23"
+    },
+    {
+        "title": "Senior QA Engineer",
+        "link": "https://fi.linkedin.com/jobs/view/senior-qa-engineer-at-epic-games-3613296145?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=LI%2FKvoqlrfgzZZsYfHSt4Q%3D%3D&position=17&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Epic Games",
+        "location": "Helsinki, Uusimaa, Finland",
+        "date": "18-08-23"
+    },
+    {
+        "title": "Test Automation Specialist",
+        "link": "https://fi.linkedin.com/jobs/view/test-automation-specialist-at-nomentia-3690540832?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=jjftN41BRMXSJapCCi5THQ%3D%3D&position=18&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Nomentia",
+        "location": "Helsinki Metropolitan Area",
+        "date": "14-08-23"
     },
     {
         "title": "QA Test Lead",
-        "link": "https://fi.linkedin.com/jobs/view/qa-test-lead-at-unikie-3608022388?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=SZfRUrOx3ayprKo97xFcwg%3D%3D&position=14&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "link": "https://fi.linkedin.com/jobs/view/qa-test-lead-at-unikie-3608022388?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=kmdR4HBOkTOPT%2Bg5gBkAAA%3D%3D&position=19&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "Unikie",
         "location": "Helsinki, Uusimaa, Finland",
         "date": "25-05-23"
     },
     {
-        "title": "Software Test Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/software-test-engineer-at-patria-3642998784?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=MD4SYXRjdEkV%2Bc4FynUIwA%3D%3D&position=15&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Patria",
-        "location": "Tampere, Pirkanmaa, Finland",
-        "date": "26-07-23"
-    },
-    {
-        "title": "Web Developer, Backend Developer  &amp; Test Automation Engineer roles, Finland",
-        "link": "https://fi.linkedin.com/jobs/view/web-developer-backend-developer-amp-test-automation-engineer-roles-finland-at-iheadhunt-3664559683?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=MNugYnMhVB7oaKK1vhIcGg%3D%3D&position=16&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "iHeadHunt",
-        "location": "Finland",
-        "date": "14-07-23"
-    },
-    {
-        "title": "QA Engineer/Developer - Espoo - Hybrid",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-developer-espoo-hybrid-at-jefferson-frank-3671478108?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=YvWWPu9EKXOBdxt8oQdRwA%3D%3D&position=17&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Jefferson Frank",
-        "location": "Espoo, Uusimaa, Finland",
-        "date": "21-07-23"
-    },
-    {
-        "title": "QA Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-at-nigel-frank-international-3649826877?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=CKOC65uOgpAwCgM0BB1tUQ%3D%3D&position=18&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Nigel Frank International",
-        "location": "Helsinki Metropolitan Area",
-        "date": "01-07-23"
-    },
-    {
-        "title": "QA Engineer",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-at-nigel-frank-international-3654017477?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=mIoBTu1iE%2FC1s24m673Lhg%3D%3D&position=19&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Nigel Frank International",
+        "title": "Software Verification Engineer (Test Automation)",
+        "link": "https://fi.linkedin.com/jobs/view/software-verification-engineer-test-automation-at-varian-3675090593?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=z3TiaQilI881S0uz387J4g%3D%3D&position=20&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Varian",
         "location": "Helsinki, Uusimaa, Finland",
-        "date": "05-07-23"
-    },
-    {
-        "title": "Test Automation Engineers",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-engineers-at-unikie-3617802388?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=UIMWY4c5yK2M19VkhPXnvQ%3D%3D&position=20&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Unikie",
-        "location": "Helsinki, Uusimaa, Finland",
-        "date": "01-05-23"
+        "date": "25-07-23"
     },
     {
         "title": "QA Engineer - Developer - Hybrid - Espoo/Helsinki",
-        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-developer-hybrid-espoo-helsinki-at-jefferson-frank-3672862791?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=jHiPx4oePmqrLqbk0xn7LQ%3D%3D&position=21&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-developer-hybrid-espoo-helsinki-at-jefferson-frank-3681880401?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=Vc9JF6emt8KWJxYcRlWuNw%3D%3D&position=21&pageNum=0&trk=public_jobs_jserp-result_search-card",
         "company": "Jefferson Frank",
         "location": "Helsinki, Uusimaa, Finland",
         "date": "22-07-23"
     },
     {
-        "title": "QA Test Lead",
-        "link": "https://fi.linkedin.com/jobs/view/qa-test-lead-at-unikie-3644071518?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=%2FgJWxdp4Dr7%2FcTdOWWrAWA%3D%3D&position=22&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Unikie",
-        "location": "Tampere, Pirkanmaa, Finland",
-        "date": "31-05-23"
-    },
-    {
-        "title": "Senior Automation Test Engineer - Technology R&D",
-        "link": "https://fi.linkedin.com/jobs/view/senior-automation-test-engineer-technology-r-d-at-signant-health-3676795902?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=BFdzeq%2FZL2KYoJxYTdKzSA%3D%3D&position=23&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Signant Health",
-        "location": "Finland",
-        "date": "26-07-23"
-    },
-    {
-        "title": "DigiStar - Junior Software Tester",
-        "link": "https://fi.linkedin.com/jobs/view/digistar-junior-software-tester-at-innofactor-3616488248?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=2owMwWIb24HGvuOZPNpK%2BQ%3D%3D&position=24&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Innofactor",
+        "title": "QA Engineer/Developer - Espoo - Hybrid",
+        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-developer-espoo-hybrid-at-jefferson-frank-3683808852?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=iY%2FyyCs8RD%2F1peXWxEETGw%3D%3D&position=22&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Jefferson Frank",
         "location": "Espoo, Uusimaa, Finland",
-        "date": "24-05-23"
+        "date": "14-07-23"
     },
     {
-        "title": "Test Automation Engineers",
-        "link": "https://fi.linkedin.com/jobs/view/test-automation-engineers-at-unikie-3617800750?refId=gNqOl58nLDfz04cGFOPPjA%3D%3D&trackingId=GlFwQ6m1adZlKRpoZRQB7Q%3D%3D&position=25&pageNum=0&trk=public_jobs_jserp-result_search-card",
-        "company": "Unikie",
-        "location": "Oulu, North Ostrobothnia, Finland",
-        "date": "01-05-23"
+        "title": "Test Manager",
+        "link": "https://fi.linkedin.com/jobs/view/test-manager-at-lowell-3688933030?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=4Cp1drkuwvBiKqR6U7UU4g%3D%3D&position=23&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Lowell",
+        "location": "Helsinki, Uusimaa, Finland",
+        "date": "08-08-23"
+    },
+    {
+        "title": "Web Developer, Backend Developer  &amp; Test Automation Engineer roles, Finland",
+        "link": "https://fi.linkedin.com/jobs/view/web-developer-backend-developer-amp-test-automation-engineer-roles-finland-at-iheadhunt-3664559683?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=ST0V5P6iz%2BsVcbC5LwaNUg%3D%3D&position=24&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "iHeadHunt",
+        "location": "Finland",
+        "date": "14-07-23"
+    },
+    {
+        "title": "QA Engineer - Developer - Hybrid - Espoo/Helsinki",
+        "link": "https://fi.linkedin.com/jobs/view/qa-engineer-developer-hybrid-espoo-helsinki-at-jefferson-frank-3676951509?refId=5KaJlOCpRJP%2FXlT5LLaMGg%3D%3D&trackingId=v9ZR91c4fQJKNkQ1Yfeziw%3D%3D&position=25&pageNum=0&trk=public_jobs_jserp-result_search-card",
+        "company": "Jefferson Frank",
+        "location": "Helsinki, Uusimaa, Finland",
+        "date": "27-07-23"
     }
 ]
